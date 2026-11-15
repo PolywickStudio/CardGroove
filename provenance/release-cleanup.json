@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-04",
+  "scope": "Local archives only; previously distributed copies are unaffected.",
+  "archives": [
+    {
+      "file": "taglist-0.1.0.zip",
+      "removed": [
+        "sources/legacy/atrs.tsv",
+        "sources/legacy/tags.tsv"
+      ],
+      "sha256Before": "c196b2d94e9aaf365daf62501a1c0622634869d51434b80e85a76c7ed3eecaf9",
+      "sha256After": "41d1b3373c63b776f0c05027421eb09584661d30e20eaa1c31c9bddd7b4d78be"
+    },
+    {
+      "file": "taglist-0.1.1.zip",
+      "removed": [
+        "sources/legacy/atrs.tsv",
+        "sources/legacy/tags.tsv"
+      ],
+      "sha256Before": "911f7abc783b202485ff46ee9cc0517e22c8f34db77a3372771790681f43ba8c",
+      "sha256After": "e5d5460f931e21e20b22b5f949b5d83d6f57342c2d4aa84e75b8ed5c0875f1dc"
+    },
+    {
+      "file": "taglist-0.2.0.zip",
+      "removed": [
+        "sources/legacy/atrs.tsv",
+        "sources/legacy/tags.tsv"
+      ],
+      "sha256Before": "a061e9ecaa1d3ca2e519117ef03e1f7cdaff2d19ddb8d62090eb88d860888530",
+      "sha256After": "e049f54e27f83c9f31bce38e443724dbd6b9ddc13cbeee80a048186e02fff830"
+    },
+    {
+      "file": "taglist-0.2.1.zip",
+      "removed": [
+        "sources/legacy/atrs.tsv",
+        "sources/legacy/tags.tsv"
+      ],
+      "sha256Before": "312ddf8389d198a8e80c82479eb71c590fa19dedb61bead9e4da5a2058c4245d",
+      "sha256After": "bf898f34a6c883278a3f2dc80b9921fa4357583314693302a665501882ace053"
+    },
+    {
+      "file": "taglist-0.2.2.zip",
+      "removed": [
+        "sources/legacy/atrs.tsv",
+        "sources/legacy/tags.tsv"
+      ],
+      "sha256Before": "acfa168ef898d24172fa4b351c6284aab592091f01f1119741c683c06c109d34",
+      "sha256After": "d75ea812d93cd934b63a1230fa5b53f210146f2c6966a98e305bbce1b366c61c"
+    },
+    {
+      "file": "taglist-0.2.3.zip",
+      "removed": [
+        "sources/legacy/atrs.tsv",
+        "sources/legacy/tags.tsv"
+      ],
+      "sha256Before": "1260a39396ee00ecca8af61a8bdcb805990b835069c076bccb402b0a3c37591d",
+      "sha256After": "7c77fab61a3e582b1701a4e701bd48fc0d63a147a0870a098b8ab8d55c6cfa5d"
+    }
+  ]
+}

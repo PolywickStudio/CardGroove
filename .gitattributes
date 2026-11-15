@@ -1,0 +1,6 @@
+* text=auto eol=lf
+# Imported snapshots must preserve bytes for provenance hashes.
+sources/** -text
+licenses/** -text
+data/atrs.json -text
+*.zip binary

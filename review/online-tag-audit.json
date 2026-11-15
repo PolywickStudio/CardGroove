@@ -1,0 +1,1398 @@
+{
+  "checkedAt": "2026-10-28",
+  "scope": "Names and profile allocations for all 85 legacy IDs; not a format/length or implementation-conformance audit. Historical documents confirm only their stated versions.",
+  "activeCatalogChanged": false,
+  "sources": {
+    "emv43-book3": {
+      "author": "EMVCo",
+      "title": "EMV 4.3 Book 3, Application Specification",
+      "version": "November 2011",
+      "url": "https://www.emvco.com/emv-technologies/emv-contact-chip/",
+      "hosting": "Public transcription of the EMVCo-authored specification; not the publisher host.",
+      "locator": "Annex A, Table 34, printed pages 150-154; Annex B1, printed page 156"
+    },
+    "kernel2-26": {
+      "author": "EMVCo",
+      "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+      "version": "2.6, February 2016",
+      "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+      "hosting": "Public mirror of EMVCo-authored PDF.",
+      "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+    },
+    "kernel3-211": {
+      "author": "EMVCo",
+      "title": "EMV Contactless Book C-3, Kernel 3 Specification",
+      "version": "2.11, June 2023",
+      "url": "https://www.emvco.com/emvco-website-search/?post_id=91727&type=specifications",
+      "hosting": "Public transcription of the EMVCo-authored specification; not the publisher host.",
+      "locator": "Annex A data dictionary and tag index, printed pages 119-120"
+    },
+    "visa-public-14": {
+      "author": "Visa",
+      "title": "Visa Integrated Circuit Card Card Specification",
+      "version": "1.4.0, Visa Public, 31 October 2001",
+      "url": "https://digitalpartnerservices.visaonline.com/Document",
+      "hosting": "Public transcription of a historical document marked Visa Public.",
+      "locator": "Appendix A, Table A-4, printed pages A-63/A-64; individual definitions in Table A-1",
+      "limitation": "Historical profile evidence only; not confirmation of a current Visa profile."
+    },
+    "iso7816-6-1996": {
+      "author": "ISO/IEC",
+      "title": "ISO/IEC 7816-6:1996 preview",
+      "version": "1996",
+      "url": "https://cdn.standards.iteh.ai/samples/24183/f9cc937c09f44ed086c88fa9a0899fdf/ISO-IEC-7816-6-1996.pdf",
+      "hosting": "Standards preview.",
+      "locator": "IDO list and wrapper discussion, PDF pages 7 and 9"
+    },
+    "elitt-17": {
+      "author": "ELITT",
+      "title": "Instructions for use: CB test cards and CB development cards",
+      "version": "1.7, 8 February 2024",
+      "url": "https://testcards.elitt.com/wp-content/uploads/2024/03/ELITT_Notice_Cartes_CB_test_developpement_v1.7_V19_20EN.pdf",
+      "hosting": "Test-card vendor publisher.",
+      "locator": "PDF pages 23-24 (C3/C4), 29 (9F51/9F52), 24/30 (DF62)",
+      "limitation": "Evidence about the vendor test-card profiles; not a universal tag allocation."
+    },
+    "gp-gpshell": {
+      "author": "GlobalPlatform library / GPShell maintainers",
+      "title": "GPShell command manual",
+      "version": "Online repository checked 2026-10-28",
+      "url": "https://github.com/kaoh/globalplatform/blob/master/gpshell/src/gpshell.1.md",
+      "hosting": "Implementation maintainer documentation.",
+      "locator": "get_data identifiers and Format of CPLC data",
+      "limitation": "Implementation evidence for GlobalPlatform CPLC, not an official EMV allocation."
+    }
+  },
+  "counts": {
+    "not-ber-tag": 11,
+    "confirmed-common": 41,
+    "confirmed-profile": 29,
+    "legacy-label-unconfirmed": 4
+  },
+  "entries": [
+    {
+      "tag": "00C5",
+      "legacyLabel": "Card issuer action code online",
+      "active": false,
+      "definitions": [],
+      "outcome": "not-ber-tag",
+      "legacyMeaningConfirmed": false,
+      "recommendation": "Exclude from the BER-TLV tag catalog. Preserve only as historical identifiers if needed.",
+      "note": "A leading 00 is not a two-byte EMV tag prefix. Possible file/DGI/internal identifier semantics were not established.",
+      "ruleSource": "emv43-book3"
+    },
+    {
+      "tag": "00C6",
+      "legacyLabel": "PIN Try Limit",
+      "active": false,
+      "definitions": [],
+      "outcome": "not-ber-tag",
+      "legacyMeaningConfirmed": false,
+      "recommendation": "Exclude from the BER-TLV tag catalog. Preserve only as historical identifiers if needed.",
+      "note": "A leading 00 is not a two-byte EMV tag prefix. Possible file/DGI/internal identifier semantics were not established.",
+      "ruleSource": "emv43-book3"
+    },
+    {
+      "tag": "00C7",
+      "legacyLabel": "CDOL 1 Related Data Length",
+      "active": false,
+      "definitions": [],
+      "outcome": "not-ber-tag",
+      "legacyMeaningConfirmed": false,
+      "recommendation": "Exclude from the BER-TLV tag catalog. Preserve only as historical identifiers if needed.",
+      "note": "A leading 00 is not a two-byte EMV tag prefix. Possible file/DGI/internal identifier semantics were not established.",
+      "ruleSource": "emv43-book3"
+    },
+    {
+      "tag": "00C8",
+      "legacyLabel": "Card risk management country code",
+      "active": false,
+      "definitions": [],
+      "outcome": "not-ber-tag",
+      "legacyMeaningConfirmed": false,
+      "recommendation": "Exclude from the BER-TLV tag catalog. Preserve only as historical identifiers if needed.",
+      "note": "A leading 00 is not a two-byte EMV tag prefix. Possible file/DGI/internal identifier semantics were not established.",
+      "ruleSource": "emv43-book3"
+    },
+    {
+      "tag": "00C9",
+      "legacyLabel": "Card risk management currency code",
+      "active": false,
+      "definitions": [],
+      "outcome": "not-ber-tag",
+      "legacyMeaningConfirmed": false,
+      "recommendation": "Exclude from the BER-TLV tag catalog. Preserve only as historical identifiers if needed.",
+      "note": "A leading 00 is not a two-byte EMV tag prefix. Possible file/DGI/internal identifier semantics were not established.",
+      "ruleSource": "emv43-book3"
+    },
+    {
+      "tag": "00CA",
+      "legacyLabel": "Lower cummulative offline transaction amount",
+      "active": false,
+      "definitions": [],
+      "outcome": "not-ber-tag",
+      "legacyMeaningConfirmed": false,
+      "recommendation": "Exclude from the BER-TLV tag catalog. Preserve only as historical identifiers if needed.",
+      "note": "A leading 00 is not a two-byte EMV tag prefix. Possible file/DGI/internal identifier semantics were not established.",
+      "ruleSource": "emv43-book3"
+    },
+    {
+      "tag": "00CB",
+      "legacyLabel": "Upper cumulative offline transaction amount",
+      "active": false,
+      "definitions": [],
+      "outcome": "not-ber-tag",
+      "legacyMeaningConfirmed": false,
+      "recommendation": "Exclude from the BER-TLV tag catalog. Preserve only as historical identifiers if needed.",
+      "note": "A leading 00 is not a two-byte EMV tag prefix. Possible file/DGI/internal identifier semantics were not established.",
+      "ruleSource": "emv43-book3"
+    },
+    {
+      "tag": "00D1",
+      "legacyLabel": "Currency conversion table",
+      "active": false,
+      "definitions": [],
+      "outcome": "not-ber-tag",
+      "legacyMeaningConfirmed": false,
+      "recommendation": "Exclude from the BER-TLV tag catalog. Preserve only as historical identifiers if needed.",
+      "note": "A leading 00 is not a two-byte EMV tag prefix. Possible file/DGI/internal identifier semantics were not established.",
+      "ruleSource": "emv43-book3"
+    },
+    {
+      "tag": "00D3",
+      "legacyLabel": "Additional check table",
+      "active": false,
+      "definitions": [],
+      "outcome": "not-ber-tag",
+      "legacyMeaningConfirmed": false,
+      "recommendation": "Exclude from the BER-TLV tag catalog. Preserve only as historical identifiers if needed.",
+      "note": "A leading 00 is not a two-byte EMV tag prefix. Possible file/DGI/internal identifier semantics were not established.",
+      "ruleSource": "emv43-book3"
+    },
+    {
+      "tag": "00D5",
+      "legacyLabel": "Application Control",
+      "active": false,
+      "definitions": [],
+      "outcome": "not-ber-tag",
+      "legacyMeaningConfirmed": false,
+      "recommendation": "Exclude from the BER-TLV tag catalog. Preserve only as historical identifiers if needed.",
+      "note": "A leading 00 is not a two-byte EMV tag prefix. Possible file/DGI/internal identifier semantics were not established.",
+      "ruleSource": "emv43-book3"
+    },
+    {
+      "tag": "00D6",
+      "legacyLabel": "Default ARPC response code",
+      "active": false,
+      "definitions": [],
+      "outcome": "not-ber-tag",
+      "legacyMeaningConfirmed": false,
+      "recommendation": "Exclude from the BER-TLV tag catalog. Preserve only as historical identifiers if needed.",
+      "note": "A leading 00 is not a two-byte EMV tag prefix. Possible file/DGI/internal identifier semantics were not established.",
+      "ruleSource": "emv43-book3"
+    },
+    {
+      "tag": "42",
+      "legacyLabel": "Issuer Identification Number (IIN)",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Issuer Identification Number (IIN)",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "52",
+      "legacyLabel": "Command To Perform",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "ISO/IEC 7816 interindustry",
+          "name": "Command To Perform",
+          "source": "iso7816-6-1996"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit.",
+      "note": "An ISO interindustry object, not a payment-only EMV data element."
+    },
+    {
+      "tag": "56",
+      "legacyLabel": "Track 1 Data",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV Contactless Kernel 2 v2.6",
+          "name": "Track 1 Data",
+          "source": "kernel2-26"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label."
+    },
+    {
+      "tag": "5F50",
+      "legacyLabel": "Issuer URL",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Issuer URL",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "5F53",
+      "legacyLabel": "International Bank Account Number (IBAN)",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "International Bank Account Number (IBAN)",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "5F54",
+      "legacyLabel": "Bank Identifier Code (BIC)",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Bank Identifier Code (BIC)",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "5F55",
+      "legacyLabel": "Issuer Country Code (alpha2 format)",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Issuer Country Code (alpha2 format)",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "5F56",
+      "legacyLabel": "Issuer Country Code (alpha3 format)",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Issuer Country Code (alpha3 format)",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "73",
+      "legacyLabel": "Directory Discretionary Template",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Directory Discretionary Template",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "81",
+      "legacyLabel": "Amount, Authorised (Binary)",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Amount, Authorised (Binary)",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "89",
+      "legacyLabel": "Authorisation Code",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Authorisation Code",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "99",
+      "legacyLabel": "Transaction PIN Data",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Transaction PIN Data",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9D",
+      "legacyLabel": "Directory Definition File (DDF) Name",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Directory Definition File (DDF) Name",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F01",
+      "legacyLabel": "Acquirer Identifier",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Acquirer Identifier",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F04",
+      "legacyLabel": "Amount, Other (Binary)",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Amount, Other (Binary)",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F05",
+      "legacyLabel": "Application Discretionary Data",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Application Discretionary Data",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F0B",
+      "legacyLabel": "Cardholder Name Extended",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Cardholder Name Extended",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F0D",
+      "legacyLabel": "Issuer Action Code - Default",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Issuer Action Code - Default",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F0E",
+      "legacyLabel": "Issuer Action Code - Denial",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Issuer Action Code - Denial",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F0F",
+      "legacyLabel": "Issuer Action Code - Online",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Issuer Action Code - Online",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F14",
+      "legacyLabel": "Lower Consecutive Offline Limit (EMV Generic)",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Lower Consecutive Offline Limit (EMV Generic)",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F15",
+      "legacyLabel": "Merchant Category Code",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Merchant Category Code",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F16",
+      "legacyLabel": "Merchant Identifier",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Merchant Identifier",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F1B",
+      "legacyLabel": "Terminal Floor Limit",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Terminal Floor Limit",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F1C",
+      "legacyLabel": "Terminal Identification",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Terminal Identification",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F1D",
+      "legacyLabel": "Terminal Risk Management Data",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Terminal Risk Management Data",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F1F",
+      "legacyLabel": "Track 1 Discretion Data",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Track 1 Discretion Data",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F20",
+      "legacyLabel": "Track 2 Discretion Data",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Track 2 Discretion Data",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F22",
+      "legacyLabel": "Certification Authority Public Key Index",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Certification Authority Public Key Index",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F23",
+      "legacyLabel": "Upper Consecutive Offline Limit (UCOL)",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Upper Consecutive Offline Limit (UCOL)",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F2D",
+      "legacyLabel": "ICC PIN Encipherment Public Key Certificate",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "ICC PIN Encipherment Public Key Certificate",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F2E",
+      "legacyLabel": "ICC PIN Encipherment Public Key Exponent",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "ICC PIN Encipherment Public Key Exponent",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F2F",
+      "legacyLabel": "ICC PIN Encipherment Public Key Remainder",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "ICC PIN Encipherment Public Key Remainder",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F39",
+      "legacyLabel": "POS Entry Mode",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "POS Entry Mode",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F3A",
+      "legacyLabel": "Amount,Reference Currency",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Amount,Reference Currency",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F3B",
+      "legacyLabel": "Application Reference Currency",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Application Reference Currency",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F3C",
+      "legacyLabel": "Transaction Reference Currency Code",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Transaction Reference Currency Code",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F3D",
+      "legacyLabel": "Transaction Reference Currency Exponent",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Transaction Reference Currency Exponent",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F43",
+      "legacyLabel": "Application Reference Currency Exponent",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Application Reference Currency Exponent",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F4D",
+      "legacyLabel": "Log Entry",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Log Entry",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F4E",
+      "legacyLabel": "Merchant Name and Location",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Merchant Name and Location",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F4F",
+      "legacyLabel": "Log Format",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV contact 4.3",
+          "name": "Log Format",
+          "source": "emv43-book3"
+        }
+      ],
+      "outcome": "confirmed-common",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Eligible for a reviewed common-reference addition; not activated by this audit."
+    },
+    {
+      "tag": "9F51",
+      "legacyLabel": "Application Currency Code",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "Visa Public ICC 1.4.0 (historical)",
+          "name": "Application Currency Code",
+          "source": "visa-public-14"
+        },
+        {
+          "profile": "EMV Contactless Kernel 2 v2.6",
+          "name": "DRDOL",
+          "source": "kernel2-26"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label."
+    },
+    {
+      "tag": "9F52",
+      "legacyLabel": "Application Default Action (ADA) | Application Default Action",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "Visa Public ICC 1.4.0 (historical)",
+          "name": "Application Default Action",
+          "source": "visa-public-14"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label."
+    },
+    {
+      "tag": "9F53",
+      "legacyLabel": "Consecutive Transaction Counter International Limit",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "Visa Public ICC 1.4.0 (historical)",
+          "name": "Consecutive Transaction Limit (International)",
+          "source": "visa-public-14"
+        },
+        {
+          "profile": "EMV Contactless Kernel 2 v2.6",
+          "name": "Transaction Category Code",
+          "source": "kernel2-26"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label."
+    },
+    {
+      "tag": "9F54",
+      "legacyLabel": "Cumulative Total Transaction Amount Limit (CTTAL)",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "Visa Public ICC 1.4.0 (historical)",
+          "name": "Cumulative Total Transaction Amount Limit",
+          "source": "visa-public-14"
+        },
+        {
+          "profile": "EMV Contactless Kernel 2 v2.6",
+          "name": "DS ODS Card",
+          "source": "kernel2-26"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label."
+    },
+    {
+      "tag": "9F55",
+      "legacyLabel": "Issuer Authentication Flags",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "Visa Public ICC 1.4.0 (historical)",
+          "name": "Geographic Indicator",
+          "source": "visa-public-14",
+          "locator": "Table A-1, printed page A-23"
+        }
+      ],
+      "outcome": "legacy-label-unconfirmed",
+      "legacyMeaningConfirmed": false,
+      "recommendation": "Do not publish the old label as a general definition. Use the documented profile meanings only.",
+      "note": "The old Issuer Authentication Flags label was not confirmed in the checked primary documents. Historical Visa uses a different label; do not infer equivalence."
+    },
+    {
+      "tag": "9F56",
+      "legacyLabel": "Issuer Authentication Indicator",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "Visa Public ICC 1.4.0 (historical)",
+          "name": "Issuer Authentication Indicator",
+          "source": "visa-public-14"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label."
+    },
+    {
+      "tag": "9F58",
+      "legacyLabel": "Consecutive Transaction Counter Limit (CTCL) | Lower Consecutive Offline Limit (Proprietary)",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "Visa Public ICC 1.4.0 (historical)",
+          "name": "Lower Consecutive Offline Limit (Card Check)",
+          "source": "visa-public-14"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label.",
+      "note": "The historical Visa document uses the card-check offline-limit names. The legacy row includes later counter-limit aliases; current naming is not inferred from this old version."
+    },
+    {
+      "tag": "9F59",
+      "legacyLabel": "Consecutive Transaction Counter Upper Limit (CTCUL) | Upper Consecutive Offline Limit (Proprietary)",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "Visa Public ICC 1.4.0 (historical)",
+          "name": "Upper Consecutive Offline Limit (Card Check)",
+          "source": "visa-public-14"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label.",
+      "note": "The historical Visa document uses the card-check offline-limit names. The legacy row includes later counter-limit aliases; current naming is not inferred from this old version."
+    },
+    {
+      "tag": "9F5B",
+      "legacyLabel": "DSDOL",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV Contactless Kernel 2 v2.6",
+          "name": "DSDOL",
+          "source": "kernel2-26"
+        },
+        {
+          "profile": "EMV Contactless Kernel 3 v2.11",
+          "name": "Issuer Script Results",
+          "source": "kernel3-211"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label."
+    },
+    {
+      "tag": "9F5C",
+      "legacyLabel": "Cumulative Total Transaction Amount Upper Limit (CTTAUL)",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "Visa Public ICC 1.4.0 (historical)",
+          "name": "Cumulative Total Transaction Amount Upper Limit",
+          "source": "visa-public-14"
+        },
+        {
+          "profile": "EMV Contactless Kernel 2 v2.6",
+          "name": "DS Requested Operator ID",
+          "source": "kernel2-26"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label."
+    },
+    {
+      "tag": "9F5D",
+      "legacyLabel": "Application Capabilities Information",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV Contactless Kernel 2 v2.6",
+          "name": "Application Capabilities Information",
+          "source": "kernel2-26"
+        },
+        {
+          "profile": "EMV Contactless Kernel 3 v2.11",
+          "name": "Available Offline Spending Amount",
+          "source": "kernel3-211"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label."
+    },
+    {
+      "tag": "9F5E",
+      "legacyLabel": "DS ID",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV Contactless Kernel 2 v2.6",
+          "name": "DS ID",
+          "source": "kernel2-26"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label."
+    },
+    {
+      "tag": "9F60",
+      "legacyLabel": "CVC3TRACK1",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV Contactless Kernel 2 v2.6",
+          "name": "CVC3 (Track 1)",
+          "source": "kernel2-26"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label."
+    },
+    {
+      "tag": "9F61",
+      "legacyLabel": "CVC3TRACK2",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV Contactless Kernel 2 v2.6",
+          "name": "CVC3 (Track 2)",
+          "source": "kernel2-26"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label."
+    },
+    {
+      "tag": "9F62",
+      "legacyLabel": "MTrack 1 Bit Map for CVC3",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV Contactless Kernel 2 v2.6",
+          "name": "PCVC3 (Track 1)",
+          "source": "kernel2-26"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label."
+    },
+    {
+      "tag": "9F63",
+      "legacyLabel": "Track 1 Bit Map for UN and ATC",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV Contactless Kernel 2 v2.6",
+          "name": "PUNATC (Track 1)",
+          "source": "kernel2-26"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label."
+    },
+    {
+      "tag": "9F64",
+      "legacyLabel": "Track 1 Nr of ATC Digits",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV Contactless Kernel 2 v2.6",
+          "name": "NATC (Track 1)",
+          "source": "kernel2-26"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label."
+    },
+    {
+      "tag": "9F65",
+      "legacyLabel": "Track 2 Bit Map for CVC3",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV Contactless Kernel 2 v2.6",
+          "name": "PCVC3 (Track 2)",
+          "source": "kernel2-26"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label."
+    },
+    {
+      "tag": "9F66",
+      "legacyLabel": "Track 2 Bit Map for UN and ATC",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV Contactless Kernel 2 v2.6",
+          "name": "PUNATC (Track 2)",
+          "source": "kernel2-26"
+        },
+        {
+          "profile": "EMV Contactless Kernel 3 v2.11",
+          "name": "Terminal Transaction Qualifiers",
+          "source": "kernel3-211"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label."
+    },
+    {
+      "tag": "9F67",
+      "legacyLabel": "Track 2 Nr of ATC Digits",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV Contactless Kernel 2 v2.6",
+          "name": "NATC (Track 2)",
+          "source": "kernel2-26"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label."
+    },
+    {
+      "tag": "9F69",
+      "legacyLabel": "Card Authentication Related Data",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV Contactless Kernel 2 v2.6",
+          "name": "UDOL",
+          "source": "kernel2-26"
+        },
+        {
+          "profile": "EMV Contactless Kernel 3 v2.11",
+          "name": "Card Authentication Related Data",
+          "source": "kernel3-211"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label."
+    },
+    {
+      "tag": "9F6B",
+      "legacyLabel": "Track 2 Data",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV Contactless Kernel 2 v2.6",
+          "name": "Track 2 Data",
+          "source": "kernel2-26"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label."
+    },
+    {
+      "tag": "9F6C",
+      "legacyLabel": "Mag Stripe Application Version Number",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV Contactless Kernel 3 v2.11",
+          "name": "Card Transaction Qualifiers",
+          "source": "kernel3-211"
+        }
+      ],
+      "outcome": "legacy-label-unconfirmed",
+      "legacyMeaningConfirmed": false,
+      "recommendation": "Do not publish the old label as a general definition. Use the documented profile meanings only.",
+      "note": "The old Mag Stripe Application Version Number label was not confirmed by the checked Kernel 2 v2.6 dictionary. Kernel 3 explicitly assigns CTQ. Absence is not proof that no historical profile used the old label."
+    },
+    {
+      "tag": "9F72",
+      "legacyLabel": "Consecutive Transaction Limit (international - country)",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "Visa Public ICC 1.4.0 (historical)",
+          "name": "Consecutive Transaction Limit (International-Country)",
+          "source": "visa-public-14"
+        },
+        {
+          "profile": "EMV Contactless Kernel 2 v2.6",
+          "name": "Protected Data Envelope 3",
+          "source": "kernel2-26"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label."
+    },
+    {
+      "tag": "9F73",
+      "legacyLabel": "Currency Conversion Factor",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "Visa Public ICC 1.4.0 (historical)",
+          "name": "Currency Conversion Factor",
+          "source": "visa-public-14"
+        },
+        {
+          "profile": "EMV Contactless Kernel 2 v2.6",
+          "name": "Protected Data Envelope 4",
+          "source": "kernel2-26"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label."
+    },
+    {
+      "tag": "9F75",
+      "legacyLabel": "Cumulative Total Transaction Amount Limit-Dual Currency | Cumulative Total Transaction Amount Limit - Dual Currency",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "Visa Public ICC 1.4.0 (historical)",
+          "name": "Cumulative Total Transaction Amount Limit - Dual Currency",
+          "source": "visa-public-14"
+        },
+        {
+          "profile": "EMV Contactless Kernel 2 v2.6",
+          "name": "Unprotected Data Envelope 1",
+          "source": "kernel2-26"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label."
+    },
+    {
+      "tag": "9F76",
+      "legacyLabel": "Secondary Application Currency Code",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "Visa Public ICC 1.4.0 (historical)",
+          "name": "Secondary Application Currency Code",
+          "source": "visa-public-14"
+        },
+        {
+          "profile": "EMV Contactless Kernel 2 v2.6",
+          "name": "Unprotected Data Envelope 2",
+          "source": "kernel2-26"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label."
+    },
+    {
+      "tag": "9F79",
+      "legacyLabel": "Master Key (MDK)",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV Contactless Kernel 2 v2.6",
+          "name": "Unprotected Data Envelope 5",
+          "source": "kernel2-26"
+        },
+        {
+          "profile": "Visa Public ICC 1.4.0 VLP (historical)",
+          "name": "VLP Available Funds",
+          "source": "visa-public-14",
+          "locator": "Table A-4, printed page A-64"
+        }
+      ],
+      "outcome": "legacy-label-unconfirmed",
+      "legacyMeaningConfirmed": false,
+      "recommendation": "Do not publish the old label as a general definition. Use the documented profile meanings only.",
+      "note": "No checked primary source supports the Master Key (MDK) label. The documented meanings are data/funds fields; this is not evidence of an exportable issuer key."
+    },
+    {
+      "tag": "9F7F",
+      "legacyLabel": "Card Product Life Cycle History File Identifiers",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "Visa Public ICC 1.4.0 (historical)",
+          "name": "Card Production Life Cycle data / historical CPLC label",
+          "source": "visa-public-14"
+        },
+        {
+          "profile": "EMV Contactless Kernel 2 v2.6",
+          "name": "DS Unpredictable Number",
+          "source": "kernel2-26"
+        },
+        {
+          "profile": "GlobalPlatform card-management context",
+          "name": "CPLC",
+          "source": "gp-gpshell"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label.",
+      "note": "The historical CPLC name is supported by the Visa document. Kernel 2 reuses the same tag differently, so a global unconditional label would be misleading."
+    },
+    {
+      "tag": "C3",
+      "legacyLabel": "Card issuer action code -decline",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "ELITT CB / Mastercard test-card profile v1.7",
+          "name": "Card issuer action code - decline",
+          "source": "elitt-17",
+          "locator": "PDF page 23"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label."
+    },
+    {
+      "tag": "C4",
+      "legacyLabel": "Card issuer action code -default",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "ELITT CB / Mastercard test-card profile v1.7",
+          "name": "Card issuer action code - default",
+          "source": "elitt-17",
+          "locator": "PDF page 24"
+        }
+      ],
+      "outcome": "confirmed-profile",
+      "legacyMeaningConfirmed": true,
+      "recommendation": "Retain only with an explicit application/profile scope; not a global label."
+    },
+    {
+      "tag": "DF62",
+      "legacyLabel": "Application Selection Flag [Canada]",
+      "active": false,
+      "definitions": [
+        {
+          "profile": "EMV Contactless Kernel 2 v2.6",
+          "name": "DS ODS Info",
+          "source": "kernel2-26"
+        },
+        {
+          "profile": "ELITT CB test-card profile v1.7",
+          "name": "CBLC",
+          "source": "elitt-17",
+          "locator": "PDF pages 24 and 30"
+        }
+      ],
+      "outcome": "legacy-label-unconfirmed",
+      "legacyMeaningConfirmed": false,
+      "recommendation": "Do not publish the old label as a general definition. Use the documented profile meanings only.",
+      "note": "The Canada Application Selection Flag label was not confirmed. Other checked profiles assign different data to this private tag."
+    }
+  ]
+}

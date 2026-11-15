@@ -1,0 +1,11 @@
+CardGroove Taglist 0.2.4 - distribution notice (2026-11-04)
+
+Original tooling: MIT, subject to per-file exceptions.
+EMV tag text: license unresolved; no MIT grant is asserted.
+ATR catalog: GPL-2.0-or-later. OpenSC source tables retain LGPL-2.1-or-later notices.
+
+Keep this notice, DATA-LICENSES.md, LICENSE, ATR-NOTICE.txt, licenses/ and atr-source/ with standalone dist exports. In full source releases, sources/upstream/ contains the original materials and dist/atr-source/ contains reproduction and transformation source. Top-level maintenance tooling now lives in the website repository, with its existing licenses unchanged.
+
+ATR transformations include format conversion, normalization, duplicate merging, matching classification and provenance. Original upstream notices and disclaimers remain intact. Any local ATR overrides are supplied in atr-source/overrides/atrs.json.
+
+The obsolete legacy tags.tsv and atrs.tsv are not distribution inputs. Historical audit records do not grant rights over third-party descriptions. See DATA-LICENSES.md for scope and limitations.

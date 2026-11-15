@@ -1,0 +1,11 @@
+{
+  "name": "cardgroove-taglist",
+  "version": "0.2.4",
+  "private": true,
+  "type": "module",
+  "description": "Shared CardGroove EMV tag and ATR reference catalogs",
+  "license": "SEE LICENSE IN DATA-LICENSES.md",
+  "engines": {
+    "node": ">=20"
+  }
+}

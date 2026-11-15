@@ -1,0 +1,6 @@
+dist/
+releases/
+node_modules/
+__pycache__/
+*.tmp
+.research/

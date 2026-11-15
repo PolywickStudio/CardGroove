@@ -1,0 +1,188 @@
+{
+  "date": "2026-10-28",
+  "release": "0.2.1",
+  "tags": [
+    "9F55",
+    "9F6C",
+    "9F79",
+    "DF62"
+  ],
+  "profileDefinitions": 8,
+  "note": "Activates confirmed meanings only. 9F55 Issuer Authentication Flags and 9F79 Master Key remain unverified and are not published. Earlier audit is retained as a historical snapshot.",
+  "entries": [
+    {
+      "tag": "9F55",
+      "profiles": [
+        {
+          "id": "visa-icc-1.4",
+          "label": "Visa - ICC 1.4.0 - historical (2001)",
+          "networks": [
+            "visa"
+          ],
+          "kernel": null,
+          "version": "1.4.0, Visa Public, 31 October 2001",
+          "historical": true,
+          "name": "Geographic Indicator",
+          "description": "Historical Visa geographic restrictions for domestic and international transactions.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "Visa Integrated Circuit Card Card Specification",
+            "url": "https://digitalpartnerservices.visaonline.com/Document",
+            "locator": "Appendix A, Table A-4, printed pages A-63/A-64; individual definitions in Table A-1"
+          }
+        }
+      ]
+    },
+    {
+      "tag": "9F6C",
+      "profiles": [
+        {
+          "id": "mc-paypass-2006",
+          "label": "Mastercard - PayPass M/Chip - historical (2006)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": null,
+          "version": "Issuer Implementation Requirements, June 2006",
+          "historical": true,
+          "name": "Mag Stripe Application Version Number (Card)",
+          "description": "Version of the card's Mastercard PayPass mag-stripe application; distinct from Visa CTQ at the same tag.",
+          "format": "binary",
+          "length": "2",
+          "reference": {
+            "title": "Mastercard PayPass M/Chip Issuer Implementation Requirements (public mirror)",
+            "url": "https://cda.manymanuals.com/tvs-monitors/cvc3/user-manual-27362/38",
+            "locator": "Section 4.7, Table 17, printed page 38"
+          }
+        },
+        {
+          "id": "visa-kernel3-2.11",
+          "label": "Visa - Kernel 3 v2.11 (2023)",
+          "networks": [
+            "visa"
+          ],
+          "kernel": "3",
+          "version": "2.11, June 2023",
+          "historical": false,
+          "name": "Card Transaction Qualifiers (CTQ)",
+          "description": "Visa Kernel 3 card-provided qualifiers describing card requirements and capabilities; not the Mastercard mag-stripe version field.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-3, Kernel 3 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91727&type=specifications",
+            "locator": "Annex A data dictionary and tag index, printed pages 119-120"
+          }
+        }
+      ]
+    },
+    {
+      "tag": "9F79",
+      "profiles": [
+        {
+          "id": "visa-icc-1.4",
+          "label": "Visa - ICC 1.4.0 - historical (2001)",
+          "networks": [
+            "visa"
+          ],
+          "kernel": null,
+          "version": "1.4.0, Visa Public, 31 October 2001",
+          "historical": true,
+          "name": "VLP Available Funds",
+          "description": "Available balance for the historical Visa Low-Value Payment feature.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "Visa Integrated Circuit Card Card Specification",
+            "url": "https://digitalpartnerservices.visaonline.com/Document",
+            "locator": "Appendix A, Table A-4, printed pages A-63/A-64; individual definitions in Table A-1"
+          }
+        },
+        {
+          "id": "mc-kernel2-2.6",
+          "label": "Mastercard - Kernel 2 v2.6 (2016)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": "2",
+          "version": "2.6, February 2016",
+          "historical": false,
+          "name": "Unprotected Data Envelope 5",
+          "description": "Fifth unprotected data envelope in the Kernel 2 data-storage profile. Its contents are application-specific; this tag does not identify a readable MDK.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+            "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+          }
+        }
+      ]
+    },
+    {
+      "tag": "DF62",
+      "profiles": [
+        {
+          "id": "canada-asf-2018",
+          "label": "Canada / Interac - application selection (2018)",
+          "networks": [
+            "interac"
+          ],
+          "kernel": null,
+          "version": "U.S. Payments Forum, Canadian Card Technical Acceptance v1.0, September 2018",
+          "historical": false,
+          "name": "Application Selection Flag (ASF)",
+          "description": "Canadian application-selection information. Byte 1 concerns ATM use; byte 2 concerns POS use. Interpret in the selected Canadian/Interac application context.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "U.S. Payments Forum - Canadian Card Technical Acceptance",
+            "url": "https://www.uspaymentsforum.org/wp-content/uploads/2019/11/Canadian-Card-Technical-Acceptance-FINAL2-Sept-2018.pdf",
+            "locator": "Printed pages 5 and 10: Application Selection Flag, tag DF62"
+          }
+        },
+        {
+          "id": "mc-kernel2-2.6",
+          "label": "Mastercard - Kernel 2 v2.6 (2016)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": "2",
+          "version": "2.6, February 2016",
+          "historical": false,
+          "name": "DS ODS Info",
+          "description": "Kernel 2 offline data-storage information; distinct from Canadian application-selection information.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+            "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+          }
+        },
+        {
+          "id": "elitt-cb-mc-1.7",
+          "label": "CB / Mastercard - ELITT test cards v1.7 (2024)",
+          "networks": [
+            "cb",
+            "mastercard",
+            "test-card"
+          ],
+          "kernel": null,
+          "version": "1.7, 8 February 2024",
+          "historical": false,
+          "name": "CBLC",
+          "description": "CBLC field in the named ELITT CB test-card profile. Do not apply this vendor test-card meaning to arbitrary DF62 values.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "Instructions for use: CB test cards and CB development cards",
+            "url": "https://testcards.elitt.com/wp-content/uploads/2024/03/ELITT_Notice_Cartes_CB_test_developpement_v1.7_V19_20EN.pdf",
+            "locator": "PDF page 23"
+          }
+        }
+      ]
+    }
+  ]
+}

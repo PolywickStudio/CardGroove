@@ -1,0 +1,645 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "tag": "4F",
+      "name": "Application Identifier (AID)",
+      "category": "Application",
+      "format": "Binary",
+      "length": "5-16",
+      "description": "Identifies the card application."
+    },
+    {
+      "tag": "50",
+      "name": "Application Label",
+      "category": "Application",
+      "format": "Text",
+      "length": "1-16",
+      "description": "Short application name for display."
+    },
+    {
+      "tag": "57",
+      "name": "Track 2 Equivalent Data",
+      "category": "Cardholder",
+      "format": "Compressed numeric",
+      "length": "Up to 19",
+      "description": "PAN, expiry, service code and discretionary data, separated by a D nibble."
+    },
+    {
+      "tag": "5A",
+      "name": "Application Primary Account Number (PAN)",
+      "category": "Cardholder",
+      "format": "Compressed numeric",
+      "length": "Up to 10",
+      "description": "Card account number; a final F nibble may pad an odd digit count."
+    },
+    {
+      "tag": "5F20",
+      "name": "Cardholder Name",
+      "category": "Cardholder",
+      "format": "Text",
+      "length": "2-26",
+      "description": "Name supplied by the card application."
+    },
+    {
+      "tag": "5F24",
+      "name": "Application Expiration Date",
+      "category": "Application",
+      "format": "Numeric",
+      "length": "3",
+      "description": "Application expiry as YYMMDD."
+    },
+    {
+      "tag": "5F25",
+      "name": "Application Effective Date",
+      "category": "Application",
+      "format": "Numeric",
+      "length": "3",
+      "description": "Application start date as YYMMDD."
+    },
+    {
+      "tag": "5F28",
+      "name": "Issuer Country Code",
+      "category": "Application",
+      "format": "Numeric",
+      "length": "2",
+      "description": "Issuer country using the ISO 3166 numeric code."
+    },
+    {
+      "tag": "5F2A",
+      "name": "Transaction Currency Code",
+      "category": "Transaction",
+      "format": "Numeric",
+      "length": "2",
+      "description": "ISO 4217 numeric currency code."
+    },
+    {
+      "tag": "5F2D",
+      "name": "Language Preference",
+      "category": "Application",
+      "format": "Text",
+      "length": "2-8",
+      "description": "Two-letter language codes in preference order."
+    },
+    {
+      "tag": "5F30",
+      "name": "Service Code",
+      "category": "Cardholder",
+      "format": "Numeric",
+      "length": "2",
+      "description": "Three service-code digits with leading zero padding."
+    },
+    {
+      "tag": "5F34",
+      "name": "Application PAN Sequence Number (PSN)",
+      "category": "Cardholder",
+      "format": "Numeric",
+      "length": "1",
+      "description": "Distinguishes cards sharing a PAN; used in key derivation."
+    },
+    {
+      "tag": "5F36",
+      "name": "Transaction Currency Exponent",
+      "category": "Transaction",
+      "format": "Numeric",
+      "length": "1",
+      "description": "Number of decimal places for the transaction currency."
+    },
+    {
+      "tag": "61",
+      "name": "Application Template",
+      "category": "Templates",
+      "format": "Constructed TLV",
+      "length": "Variable",
+      "description": "Groups an application directory entry."
+    },
+    {
+      "tag": "6F",
+      "name": "File Control Information (FCI) Template",
+      "category": "Templates",
+      "format": "Constructed TLV",
+      "length": "Variable",
+      "description": "Outer template commonly returned by SELECT."
+    },
+    {
+      "tag": "70",
+      "name": "READ RECORD Response Template",
+      "category": "Templates",
+      "format": "Constructed TLV",
+      "length": "Variable",
+      "description": "Container for application record fields."
+    },
+    {
+      "tag": "71",
+      "name": "Issuer Script Template 1",
+      "category": "Authentication",
+      "format": "Constructed TLV",
+      "length": "Variable",
+      "description": "Issuer commands processed before the final GENERATE AC."
+    },
+    {
+      "tag": "72",
+      "name": "Issuer Script Template 2",
+      "category": "Authentication",
+      "format": "Constructed TLV",
+      "length": "Variable",
+      "description": "Issuer commands processed after the final GENERATE AC."
+    },
+    {
+      "tag": "77",
+      "name": "Response Message Template Format 2",
+      "category": "Templates",
+      "format": "Constructed TLV",
+      "length": "Variable",
+      "description": "Response whose contents are tagged data objects."
+    },
+    {
+      "tag": "80",
+      "name": "Response Message Template Format 1",
+      "category": "Templates",
+      "format": "Binary",
+      "length": "Variable",
+      "description": "Response whose fields are positional rather than individually tagged."
+    },
+    {
+      "tag": "82",
+      "name": "Application Interchange Profile (AIP)",
+      "category": "Application",
+      "format": "Binary",
+      "length": "2",
+      "description": "Flags for application functions and authentication support."
+    },
+    {
+      "tag": "83",
+      "name": "Command Template",
+      "category": "Templates",
+      "format": "Binary",
+      "length": "Variable",
+      "description": "Carries concatenated PDOL values in GET PROCESSING OPTIONS."
+    },
+    {
+      "tag": "84",
+      "name": "Dedicated File (DF) Name",
+      "category": "Application",
+      "format": "Binary",
+      "length": "5-16",
+      "description": "Selected application or directory name."
+    },
+    {
+      "tag": "86",
+      "name": "Issuer Script Command",
+      "category": "Authentication",
+      "format": "Binary",
+      "length": "Variable",
+      "description": "An APDU embedded in an issuer script."
+    },
+    {
+      "tag": "87",
+      "name": "Application Priority Indicator",
+      "category": "Application",
+      "format": "Binary",
+      "length": "1",
+      "description": "Application selection priority and confirmation flag."
+    },
+    {
+      "tag": "88",
+      "name": "Short File Identifier (SFI)",
+      "category": "Application",
+      "format": "Binary",
+      "length": "1",
+      "description": "Identifies a file for record access."
+    },
+    {
+      "tag": "8A",
+      "name": "Authorisation Response Code (ARC)",
+      "category": "Transaction",
+      "format": "Text",
+      "length": "2",
+      "description": "Issuer response code; used by ARPC Method 1."
+    },
+    {
+      "tag": "8C",
+      "name": "Card Risk Management Data Object List 1 (CDOL1)",
+      "category": "Application",
+      "format": "DOL",
+      "length": "Up to 252",
+      "description": "Tag/length pairs defining input order for the first GENERATE AC."
+    },
+    {
+      "tag": "8D",
+      "name": "Card Risk Management Data Object List 2 (CDOL2)",
+      "category": "Application",
+      "format": "DOL",
+      "length": "Up to 252",
+      "description": "Tag/length pairs defining input order for the second GENERATE AC."
+    },
+    {
+      "tag": "8E",
+      "name": "Cardholder Verification Method (CVM) List",
+      "category": "Cardholder",
+      "format": "Binary",
+      "length": "Variable",
+      "description": "Amount thresholds followed by cardholder-verification rules."
+    },
+    {
+      "tag": "8F",
+      "name": "Certification Authority Public Key Index",
+      "category": "Authentication",
+      "format": "Binary",
+      "length": "1",
+      "description": "Selects a CA public key within the application RID."
+    },
+    {
+      "tag": "90",
+      "name": "Issuer Public Key Certificate",
+      "category": "Authentication",
+      "format": "Binary",
+      "length": "Variable",
+      "description": "RSA certificate used to recover the issuer public key."
+    },
+    {
+      "tag": "91",
+      "name": "Issuer Authentication Data",
+      "category": "Authentication",
+      "format": "Binary",
+      "length": "8-16",
+      "description": "Issuer authentication bytes; layout depends on the card profile."
+    },
+    {
+      "tag": "92",
+      "name": "Issuer Public Key Remainder",
+      "category": "Authentication",
+      "format": "Binary",
+      "length": "Variable",
+      "description": "Issuer modulus bytes that did not fit inside its certificate."
+    },
+    {
+      "tag": "93",
+      "name": "Signed Static Application Data (SSAD)",
+      "category": "Authentication",
+      "format": "Binary",
+      "length": "Variable",
+      "description": "Signature verified during SDA."
+    },
+    {
+      "tag": "94",
+      "name": "Application File Locator (AFL)",
+      "category": "Application",
+      "format": "Binary",
+      "length": "Variable",
+      "description": "Four-byte entries identifying records and offline-authentication coverage."
+    },
+    {
+      "tag": "95",
+      "name": "Terminal Verification Results (TVR)",
+      "category": "Transaction",
+      "format": "Binary",
+      "length": "5",
+      "description": "Bit flags recording terminal checks and failures."
+    },
+    {
+      "tag": "97",
+      "name": "Transaction Certificate Data Object List (TDOL)",
+      "category": "Application",
+      "format": "DOL",
+      "length": "Variable",
+      "description": "Tag/length pairs defining the data for the TC hash."
+    },
+    {
+      "tag": "98",
+      "name": "Transaction Certificate (TC) Hash Value",
+      "category": "Authentication",
+      "format": "Binary",
+      "length": "20",
+      "description": "SHA-1 result over the data specified by TDOL."
+    },
+    {
+      "tag": "9A",
+      "name": "Transaction Date",
+      "category": "Transaction",
+      "format": "Numeric",
+      "length": "3",
+      "description": "Transaction date as YYMMDD."
+    },
+    {
+      "tag": "9B",
+      "name": "Transaction Status Information (TSI)",
+      "category": "Transaction",
+      "format": "Binary",
+      "length": "2",
+      "description": "Flags indicating processing steps performed."
+    },
+    {
+      "tag": "9C",
+      "name": "Transaction Type",
+      "category": "Transaction",
+      "format": "Numeric",
+      "length": "1",
+      "description": "Transaction category code."
+    },
+    {
+      "tag": "9F02",
+      "name": "Amount, Authorised (Numeric)",
+      "category": "Transaction",
+      "format": "Numeric",
+      "length": "6",
+      "description": "Authorised amount encoded as twelve decimal digits."
+    },
+    {
+      "tag": "9F03",
+      "name": "Amount, Other (Numeric)",
+      "category": "Transaction",
+      "format": "Numeric",
+      "length": "6",
+      "description": "Secondary amount, such as cashback, according to the transaction profile."
+    },
+    {
+      "tag": "9F06",
+      "name": "Application Identifier (AID) - Terminal",
+      "category": "Application",
+      "format": "Binary",
+      "length": "5-16",
+      "description": "Application identifier configured at the terminal."
+    },
+    {
+      "tag": "9F07",
+      "name": "Application Usage Control",
+      "category": "Application",
+      "format": "Binary",
+      "length": "2",
+      "description": "Card usage restrictions by transaction and location."
+    },
+    {
+      "tag": "9F08",
+      "name": "Application Version Number - Card",
+      "category": "Application",
+      "format": "Binary",
+      "length": "2",
+      "description": "Version supplied by the card application."
+    },
+    {
+      "tag": "9F09",
+      "name": "Application Version Number - Terminal",
+      "category": "Application",
+      "format": "Binary",
+      "length": "2",
+      "description": "Application version supported by the terminal."
+    },
+    {
+      "tag": "9F10",
+      "name": "Issuer Application Data (IAD)",
+      "category": "Authentication",
+      "format": "Binary",
+      "length": "Up to 32",
+      "description": "Profile-defined issuer data; do not assume a universal CVR layout."
+    },
+    {
+      "tag": "9F11",
+      "name": "Issuer Code Table Index",
+      "category": "Application",
+      "format": "Numeric",
+      "length": "1",
+      "description": "Character table used for the preferred application name."
+    },
+    {
+      "tag": "9F12",
+      "name": "Application Preferred Name",
+      "category": "Application",
+      "format": "Text",
+      "length": "1-16",
+      "description": "Application name encoded using the issuer code table."
+    },
+    {
+      "tag": "9F13",
+      "name": "Last Online ATC Register",
+      "category": "Transaction",
+      "format": "Binary",
+      "length": "2",
+      "description": "ATC associated with the last online transaction."
+    },
+    {
+      "tag": "9F17",
+      "name": "PIN Try Counter",
+      "category": "Cardholder",
+      "format": "Binary",
+      "length": "1",
+      "description": "Remaining offline PIN attempts."
+    },
+    {
+      "tag": "9F18",
+      "name": "Issuer Script Identifier",
+      "category": "Authentication",
+      "format": "Binary",
+      "length": "4",
+      "description": "Identifier used to correlate issuer-script processing."
+    },
+    {
+      "tag": "9F1A",
+      "name": "Terminal Country Code",
+      "category": "Transaction",
+      "format": "Numeric",
+      "length": "2",
+      "description": "Terminal country using the ISO 3166 numeric code."
+    },
+    {
+      "tag": "9F1E",
+      "name": "Interface Device Serial Number",
+      "category": "Transaction",
+      "format": "Text",
+      "length": "8",
+      "description": "Serial identifier for the card interface device."
+    },
+    {
+      "tag": "9F21",
+      "name": "Transaction Time",
+      "category": "Transaction",
+      "format": "Numeric",
+      "length": "3",
+      "description": "Transaction time as HHMMSS."
+    },
+    {
+      "tag": "9F26",
+      "name": "Application Cryptogram (AC)",
+      "category": "Authentication",
+      "format": "Binary",
+      "length": "8",
+      "description": "Card-generated AAC, ARQC or TC; see 9F27 for the type."
+    },
+    {
+      "tag": "9F27",
+      "name": "Cryptogram Information Data (CID)",
+      "category": "Authentication",
+      "format": "Binary",
+      "length": "1",
+      "description": "Cryptogram-type and associated control bits."
+    },
+    {
+      "tag": "9F32",
+      "name": "Issuer Public Key Exponent",
+      "category": "Authentication",
+      "format": "Binary",
+      "length": "1 or 3",
+      "description": "RSA exponent used with the recovered issuer modulus."
+    },
+    {
+      "tag": "9F33",
+      "name": "Terminal Capabilities",
+      "category": "Transaction",
+      "format": "Binary",
+      "length": "3",
+      "description": "Terminal input, verification and security capabilities."
+    },
+    {
+      "tag": "9F34",
+      "name": "Cardholder Verification Method (CVM) Results",
+      "category": "Cardholder",
+      "format": "Binary",
+      "length": "3",
+      "description": "Selected CVM, its condition and its outcome."
+    },
+    {
+      "tag": "9F35",
+      "name": "Terminal Type",
+      "category": "Transaction",
+      "format": "Numeric",
+      "length": "1",
+      "description": "Terminal environment and communication characteristics."
+    },
+    {
+      "tag": "9F36",
+      "name": "Application Transaction Counter (ATC)",
+      "category": "Authentication",
+      "format": "Binary",
+      "length": "2",
+      "description": "Card transaction counter, also used for session-key derivation."
+    },
+    {
+      "tag": "9F37",
+      "name": "Unpredictable Number (UN)",
+      "category": "Transaction",
+      "format": "Binary",
+      "length": "4",
+      "description": "Terminal challenge included in transaction processing."
+    },
+    {
+      "tag": "9F38",
+      "name": "Processing Options Data Object List (PDOL)",
+      "category": "Application",
+      "format": "DOL",
+      "length": "Variable",
+      "description": "Tag/length pairs defining GET PROCESSING OPTIONS input."
+    },
+    {
+      "tag": "9F40",
+      "name": "Additional Terminal Capabilities",
+      "category": "Transaction",
+      "format": "Binary",
+      "length": "5",
+      "description": "Additional transaction, input and output capability flags."
+    },
+    {
+      "tag": "9F41",
+      "name": "Transaction Sequence Counter",
+      "category": "Transaction",
+      "format": "Numeric",
+      "length": "2-4",
+      "description": "Terminal-maintained transaction sequence."
+    },
+    {
+      "tag": "9F42",
+      "name": "Application Currency Code",
+      "category": "Application",
+      "format": "Numeric",
+      "length": "2",
+      "description": "ISO 4217 numeric application currency."
+    },
+    {
+      "tag": "9F44",
+      "name": "Application Currency Exponent",
+      "category": "Application",
+      "format": "Numeric",
+      "length": "1",
+      "description": "Decimal places used for the application currency."
+    },
+    {
+      "tag": "9F45",
+      "name": "Data Authentication Code (DAC)",
+      "category": "Authentication",
+      "format": "Binary",
+      "length": "2",
+      "description": "Value recovered from successfully verified SSAD."
+    },
+    {
+      "tag": "9F46",
+      "name": "ICC Public Key Certificate",
+      "category": "Authentication",
+      "format": "Binary",
+      "length": "Variable",
+      "description": "Issuer-signed certificate used to recover the card public key."
+    },
+    {
+      "tag": "9F47",
+      "name": "ICC Public Key Exponent",
+      "category": "Authentication",
+      "format": "Binary",
+      "length": "1 or 3",
+      "description": "RSA exponent for the card public key."
+    },
+    {
+      "tag": "9F48",
+      "name": "ICC Public Key Remainder",
+      "category": "Authentication",
+      "format": "Binary",
+      "length": "Variable",
+      "description": "Card modulus bytes outside its certificate."
+    },
+    {
+      "tag": "9F49",
+      "name": "Dynamic Data Authentication Data Object List (DDOL)",
+      "category": "Authentication",
+      "format": "DOL",
+      "length": "Variable",
+      "description": "Tag/length pairs defining INTERNAL AUTHENTICATE input."
+    },
+    {
+      "tag": "9F4A",
+      "name": "Static Data Authentication Tag List",
+      "category": "Authentication",
+      "format": "Tag list",
+      "length": "Variable",
+      "description": "Tags whose values are included in offline authentication; core EMV uses AIP (82)."
+    },
+    {
+      "tag": "9F4B",
+      "name": "Signed Dynamic Application Data (SDAD)",
+      "category": "Authentication",
+      "format": "Binary",
+      "length": "Variable",
+      "description": "Card signature used in dynamic authentication."
+    },
+    {
+      "tag": "9F4C",
+      "name": "ICC Dynamic Number",
+      "category": "Authentication",
+      "format": "Binary",
+      "length": "2-8",
+      "description": "Dynamic value recovered during signature verification."
+    },
+    {
+      "tag": "A5",
+      "name": "FCI Proprietary Template",
+      "category": "Templates",
+      "format": "Constructed TLV",
+      "length": "Variable",
+      "description": "Application-specific contents within FCI."
+    },
+    {
+      "tag": "BF0C",
+      "name": "FCI Issuer Discretionary Data",
+      "category": "Templates",
+      "format": "Constructed TLV",
+      "length": "Variable",
+      "description": "Issuer-defined FCI contents."
+    }
+  ]
+}

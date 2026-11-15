@@ -1,0 +1,633 @@
+{
+  "note": "85 historical labels retained. 33 IDs are active with confirmed profile meanings; 52 remain inactive. Active definitions may differ from an unverified historical label. ATR data is unchanged.",
+  "tags": [
+    {
+      "tag": "00C5",
+      "label": "Card issuer action code online",
+      "status": "not-ber-tag",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#00C5"
+    },
+    {
+      "tag": "00C6",
+      "label": "PIN Try Limit",
+      "status": "not-ber-tag",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#00C6"
+    },
+    {
+      "tag": "00C7",
+      "label": "CDOL 1 Related Data Length",
+      "status": "not-ber-tag",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#00C7"
+    },
+    {
+      "tag": "00C8",
+      "label": "Card risk management country code",
+      "status": "not-ber-tag",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#00C8"
+    },
+    {
+      "tag": "00C9",
+      "label": "Card risk management currency code",
+      "status": "not-ber-tag",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#00C9"
+    },
+    {
+      "tag": "00CA",
+      "label": "Lower cummulative offline transaction amount",
+      "status": "not-ber-tag",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#00CA"
+    },
+    {
+      "tag": "00CB",
+      "label": "Upper cumulative offline transaction amount",
+      "status": "not-ber-tag",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#00CB"
+    },
+    {
+      "tag": "00D1",
+      "label": "Currency conversion table",
+      "status": "not-ber-tag",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#00D1"
+    },
+    {
+      "tag": "00D3",
+      "label": "Additional check table",
+      "status": "not-ber-tag",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#00D3"
+    },
+    {
+      "tag": "00D5",
+      "label": "Application Control",
+      "status": "not-ber-tag",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#00D5"
+    },
+    {
+      "tag": "00D6",
+      "label": "Default ARPC response code",
+      "status": "not-ber-tag",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#00D6"
+    },
+    {
+      "tag": "42",
+      "label": "Issuer Identification Number (IIN)",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#42"
+    },
+    {
+      "tag": "52",
+      "label": "Command To Perform",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#52"
+    },
+    {
+      "tag": "56",
+      "label": "Track 1 Data",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#56",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "5F50",
+      "label": "Issuer URL",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#5F50"
+    },
+    {
+      "tag": "5F53",
+      "label": "International Bank Account Number (IBAN)",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#5F53"
+    },
+    {
+      "tag": "5F54",
+      "label": "Bank Identifier Code (BIC)",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#5F54"
+    },
+    {
+      "tag": "5F55",
+      "label": "Issuer Country Code (alpha2 format)",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#5F55"
+    },
+    {
+      "tag": "5F56",
+      "label": "Issuer Country Code (alpha3 format)",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#5F56"
+    },
+    {
+      "tag": "73",
+      "label": "Directory Discretionary Template",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#73"
+    },
+    {
+      "tag": "81",
+      "label": "Amount, Authorised (Binary)",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#81"
+    },
+    {
+      "tag": "89",
+      "label": "Authorisation Code",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#89"
+    },
+    {
+      "tag": "99",
+      "label": "Transaction PIN Data",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#99"
+    },
+    {
+      "tag": "9D",
+      "label": "Directory Definition File (DDF) Name",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9D"
+    },
+    {
+      "tag": "9F01",
+      "label": "Acquirer Identifier",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F01"
+    },
+    {
+      "tag": "9F04",
+      "label": "Amount, Other (Binary)",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F04"
+    },
+    {
+      "tag": "9F05",
+      "label": "Application Discretionary Data",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F05"
+    },
+    {
+      "tag": "9F0B",
+      "label": "Cardholder Name Extended",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F0B"
+    },
+    {
+      "tag": "9F0D",
+      "label": "Issuer Action Code - Default",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F0D"
+    },
+    {
+      "tag": "9F0E",
+      "label": "Issuer Action Code - Denial",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F0E"
+    },
+    {
+      "tag": "9F0F",
+      "label": "Issuer Action Code - Online",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F0F"
+    },
+    {
+      "tag": "9F14",
+      "label": "Lower Consecutive Offline Limit (EMV Generic)",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F14"
+    },
+    {
+      "tag": "9F15",
+      "label": "Merchant Category Code",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F15"
+    },
+    {
+      "tag": "9F16",
+      "label": "Merchant Identifier",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F16"
+    },
+    {
+      "tag": "9F1B",
+      "label": "Terminal Floor Limit",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F1B"
+    },
+    {
+      "tag": "9F1C",
+      "label": "Terminal Identification",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F1C"
+    },
+    {
+      "tag": "9F1D",
+      "label": "Terminal Risk Management Data",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F1D"
+    },
+    {
+      "tag": "9F1F",
+      "label": "Track 1 Discretion Data",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F1F"
+    },
+    {
+      "tag": "9F20",
+      "label": "Track 2 Discretion Data",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F20"
+    },
+    {
+      "tag": "9F22",
+      "label": "Certification Authority Public Key Index",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F22"
+    },
+    {
+      "tag": "9F23",
+      "label": "Upper Consecutive Offline Limit (UCOL)",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F23"
+    },
+    {
+      "tag": "9F2D",
+      "label": "ICC PIN Encipherment Public Key Certificate",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F2D"
+    },
+    {
+      "tag": "9F2E",
+      "label": "ICC PIN Encipherment Public Key Exponent",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F2E"
+    },
+    {
+      "tag": "9F2F",
+      "label": "ICC PIN Encipherment Public Key Remainder",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F2F"
+    },
+    {
+      "tag": "9F39",
+      "label": "POS Entry Mode",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F39"
+    },
+    {
+      "tag": "9F3A",
+      "label": "Amount,Reference Currency",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F3A"
+    },
+    {
+      "tag": "9F3B",
+      "label": "Application Reference Currency",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F3B"
+    },
+    {
+      "tag": "9F3C",
+      "label": "Transaction Reference Currency Code",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F3C"
+    },
+    {
+      "tag": "9F3D",
+      "label": "Transaction Reference Currency Exponent",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F3D"
+    },
+    {
+      "tag": "9F43",
+      "label": "Application Reference Currency Exponent",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F43"
+    },
+    {
+      "tag": "9F4D",
+      "label": "Log Entry",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F4D"
+    },
+    {
+      "tag": "9F4E",
+      "label": "Merchant Name and Location",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F4E"
+    },
+    {
+      "tag": "9F4F",
+      "label": "Log Format",
+      "status": "confirmed-common",
+      "active": false,
+      "onlineReview": "online-tag-audit.json#9F4F"
+    },
+    {
+      "tag": "9F51",
+      "label": "Application Currency Code",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F51",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "9F52",
+      "label": "Application Default Action (ADA) | Application Default Action",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F52",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "9F53",
+      "label": "Consecutive Transaction Counter International Limit",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F53",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "9F54",
+      "label": "Cumulative Total Transaction Amount Limit (CTTAL)",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F54",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "9F55",
+      "label": "Issuer Authentication Flags",
+      "status": "legacy-label-unconfirmed",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F55",
+      "activation": "activation-followup-2026-10-28.json#9F55"
+    },
+    {
+      "tag": "9F56",
+      "label": "Issuer Authentication Indicator",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F56",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "9F58",
+      "label": "Consecutive Transaction Counter Limit (CTCL) | Lower Consecutive Offline Limit (Proprietary)",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F58",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "9F59",
+      "label": "Consecutive Transaction Counter Upper Limit (CTCUL) | Upper Consecutive Offline Limit (Proprietary)",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F59",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "9F5B",
+      "label": "DSDOL",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F5B",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "9F5C",
+      "label": "Cumulative Total Transaction Amount Upper Limit (CTTAUL)",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F5C",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "9F5D",
+      "label": "Application Capabilities Information",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F5D",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "9F5E",
+      "label": "DS ID",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F5E",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "9F60",
+      "label": "CVC3TRACK1",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F60",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "9F61",
+      "label": "CVC3TRACK2",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F61",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "9F62",
+      "label": "MTrack 1 Bit Map for CVC3",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F62",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "9F63",
+      "label": "Track 1 Bit Map for UN and ATC",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F63",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "9F64",
+      "label": "Track 1 Nr of ATC Digits",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F64",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "9F65",
+      "label": "Track 2 Bit Map for CVC3",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F65",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "9F66",
+      "label": "Track 2 Bit Map for UN and ATC",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F66",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "9F67",
+      "label": "Track 2 Nr of ATC Digits",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F67",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "9F69",
+      "label": "Card Authentication Related Data",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F69",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "9F6B",
+      "label": "Track 2 Data",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F6B",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "9F6C",
+      "label": "Mag Stripe Application Version Number",
+      "status": "legacy-label-unconfirmed",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F6C",
+      "activation": "activation-followup-2026-10-28.json#9F6C"
+    },
+    {
+      "tag": "9F72",
+      "label": "Consecutive Transaction Limit (international - country)",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F72",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "9F73",
+      "label": "Currency Conversion Factor",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F73",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "9F75",
+      "label": "Cumulative Total Transaction Amount Limit-Dual Currency | Cumulative Total Transaction Amount Limit - Dual Currency",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F75",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "9F76",
+      "label": "Secondary Application Currency Code",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F76",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "9F79",
+      "label": "Master Key (MDK)",
+      "status": "legacy-label-unconfirmed",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F79",
+      "activation": "activation-followup-2026-10-28.json#9F79"
+    },
+    {
+      "tag": "9F7F",
+      "label": "Card Product Life Cycle History File Identifiers",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#9F7F",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "C3",
+      "label": "Card issuer action code -decline",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#C3",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "C4",
+      "label": "Card issuer action code -default",
+      "status": "confirmed-profile",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#C4",
+      "activation": "activation-2026-10-28.json"
+    },
+    {
+      "tag": "DF62",
+      "label": "Application Selection Flag [Canada]",
+      "status": "legacy-label-unconfirmed",
+      "active": true,
+      "onlineReview": "online-tag-audit.json#DF62",
+      "activation": "activation-followup-2026-10-28.json#DF62"
+    }
+  ]
+}

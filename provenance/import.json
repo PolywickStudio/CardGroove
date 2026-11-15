@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "importedAt": "2026-10-27T23:43:20.813Z",
+  "website": "https://cardgroove.polywickstudio.net",
+  "counts": {
+    "tags": 80,
+    "atrs": 5199
+  },
+  "inputs": {
+    "sources/website/emv-tags.mjs": "91cc0bc9ed379845fb3f04964b6c4488d19892edc1c49b15cdda15f2be0debf0",
+    "sources/website/atr-catalog.mjs": "8e39dab6af7f3057937aa4cbc6559b5af1af3d2e6c210c2047af8241b7a949b4",
+    "sources/website/import-atrs.mjs": "47c2d53d3027a99329c481add9d003ce421e9093d7326d35a4d489c639f44310",
+    "sources/upstream/smartcard_list.txt": "33aff5367ec8bce38682b147e3487a5dd9611b8a484cb54c278f961330e7a682",
+    "sources/upstream/card-cardos.c": "23ee12f3f86959f2d1690be33f69da13ab8d57a0295225cb024ecaace756baf0",
+    "sources/upstream/card-openpgp.c": "cabd634965fdc9dd94a75af2ffc3ab1d6fb3c51a7e2d5c7fd6eb021d0d0daad2",
+    "sources/upstream/card-sc-hsm.c": "3b369801fa2f0a64f9eedc495b90c98128ebd0c4a868d7c8fd81150df81d3ef5",
+    "sources/upstream/card-epass2003.c": "12bf67cce615bd38bbd19e6c323a764d825e0f0dae9bf1524ea1d6a4e2dc9e2d",
+    "sources/upstream/manifest.json": "12ef6e51cbad15b086b990c3df8ea8f1ef5e4c60f6f6c59e0c6eef9c041258f9",
+    "sources/upstream/NOTICE.txt": "822f73b364b9de65760ffce48754abaf7b70455de5c6571ae3edff65b4f5c723",
+    "sources/upstream/GPL-2.0.txt": "32b1062f7da84967e7019d01ab805935caa7ab7321a7ced0e30ebe75e5df1670",
+    "sources/upstream/LGPL-2.1.txt": "376b54d4c5f4aa99421823fa4da93e3ab73096fce2400e89858632aa7da24a14",
+    "licenses/GPL-2.0.txt": "32b1062f7da84967e7019d01ab805935caa7ab7321a7ced0e30ebe75e5df1670",
+    "licenses/LGPL-2.1.txt": "376b54d4c5f4aa99421823fa4da93e3ab73096fce2400e89858632aa7da24a14",
+    "data/atrs.json": "b3602d91ced03a4683bc02c23754e88c600d54ad8cc16d70e01c351d851ff968"
+  },
+  "lastAtrImport": {
+    "mode": "offline",
+    "openScCommit": "ccfa7600f7c7ae249118d5f301e679e476a004a5",
+    "retrievedAt": "2026-10-25T23:48:01.477Z"
+  },
+  "removedLegacyInputs": {
+    "removedAt": "2026-11-04",
+    "reason": "Obsolete EMVFoundry-derived TSV snapshots removed from distribution; hashes retained only as historical provenance.",
+    "inputs": {
+      "sources/legacy/tags.tsv": "8b2112926f4f10e308fa2b51586be58521800c00d16a496a0549d14ddff55d4b",
+      "sources/legacy/atrs.tsv": "3a2891ab9db395c68d07323ed3e5dc92b35518b6ead84c13a02b8e885697903d"
+    }
+  }
+}

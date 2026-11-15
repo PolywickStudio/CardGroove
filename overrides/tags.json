@@ -1,0 +1,1484 @@
+[
+  {
+    "action": "add",
+    "entry": {
+      "tag": "56",
+      "name": "Track 1 Data",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "mc-kernel2-2.6",
+          "label": "Mastercard - Kernel 2 v2.6 (2016)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": "2",
+          "version": "2.6, February 2016",
+          "historical": false,
+          "name": "Track 1 Data",
+          "description": "Track 1 content used by the Kernel 2 mag-stripe processing path.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+            "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#56"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F51",
+      "name": "Application Currency Code",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "visa-icc-1.4",
+          "label": "Visa - ICC 1.4.0 - historical (2001)",
+          "networks": [
+            "visa"
+          ],
+          "kernel": null,
+          "version": "1.4.0, Visa Public, 31 October 2001",
+          "historical": true,
+          "name": "Application Currency Code",
+          "description": "Currency used by this historical Visa application.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "Visa Integrated Circuit Card Specification - official Visa library",
+            "url": "https://digitalpartnerservices.visaonline.com/Document",
+            "locator": "Appendix A, Table A-4, printed pages A-63/A-64; individual definitions in Table A-1; historical VIS 1.4.0 citation. Link opens Visa's specification library; document access may require authorization."
+          }
+        },
+        {
+          "id": "mc-kernel2-2.6",
+          "label": "Mastercard - Kernel 2 v2.6 (2016)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": "2",
+          "version": "2.6, February 2016",
+          "historical": false,
+          "name": "DRDOL",
+          "description": "Lists the data requested by the card for RECOVER AC.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+            "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#9F51"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F52",
+      "name": "Application Default Action",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "visa-icc-1.4",
+          "label": "Visa - ICC 1.4.0 - historical (2001)",
+          "networks": [
+            "visa"
+          ],
+          "kernel": null,
+          "version": "1.4.0, Visa Public, 31 October 2001",
+          "historical": true,
+          "name": "Application Default Action",
+          "description": "Issuer action settings for this historical Visa card profile.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "Visa Integrated Circuit Card Specification - official Visa library",
+            "url": "https://digitalpartnerservices.visaonline.com/Document",
+            "locator": "Appendix A, Table A-4, printed pages A-63/A-64; individual definitions in Table A-1; historical VIS 1.4.0 citation. Link opens Visa's specification library; document access may require authorization."
+          },
+          "aliases": [
+            "ADA"
+          ]
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#9F52"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F53",
+      "name": "Consecutive Transaction Limit (International)",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "visa-icc-1.4",
+          "label": "Visa - ICC 1.4.0 - historical (2001)",
+          "networks": [
+            "visa"
+          ],
+          "kernel": null,
+          "version": "1.4.0, Visa Public, 31 October 2001",
+          "historical": true,
+          "name": "Consecutive Transaction Limit (International)",
+          "description": "International offline transaction limit in this historical Visa profile.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "Visa Integrated Circuit Card Specification - official Visa library",
+            "url": "https://digitalpartnerservices.visaonline.com/Document",
+            "locator": "Appendix A, Table A-4, printed pages A-63/A-64; individual definitions in Table A-1; historical VIS 1.4.0 citation. Link opens Visa's specification library; document access may require authorization."
+          }
+        },
+        {
+          "id": "mc-kernel2-2.6",
+          "label": "Mastercard - Kernel 2 v2.6 (2016)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": "2",
+          "version": "2.6, February 2016",
+          "historical": false,
+          "name": "Transaction Category Code",
+          "description": "Transaction category used by this kernel.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+            "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#9F53"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F54",
+      "name": "Cumulative Total Transaction Amount Limit",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "visa-icc-1.4",
+          "label": "Visa - ICC 1.4.0 - historical (2001)",
+          "networks": [
+            "visa"
+          ],
+          "kernel": null,
+          "version": "1.4.0, Visa Public, 31 October 2001",
+          "historical": true,
+          "name": "Cumulative Total Transaction Amount Limit",
+          "description": "Cumulative offline amount threshold used by the historical Visa application.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "Visa Integrated Circuit Card Specification - official Visa library",
+            "url": "https://digitalpartnerservices.visaonline.com/Document",
+            "locator": "Appendix A, Table A-4, printed pages A-63/A-64; individual definitions in Table A-1; historical VIS 1.4.0 citation. Link opens Visa's specification library; document access may require authorization."
+          }
+        },
+        {
+          "id": "mc-kernel2-2.6",
+          "label": "Mastercard - Kernel 2 v2.6 (2016)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": "2",
+          "version": "2.6, February 2016",
+          "historical": false,
+          "name": "DS ODS Card",
+          "description": "Card-side opaque data used during integrated data storage.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+            "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#9F54"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F56",
+      "name": "Issuer Authentication Indicator",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "visa-icc-1.4",
+          "label": "Visa - ICC 1.4.0 - historical (2001)",
+          "networks": [
+            "visa"
+          ],
+          "kernel": null,
+          "version": "1.4.0, Visa Public, 31 October 2001",
+          "historical": true,
+          "name": "Issuer Authentication Indicator",
+          "description": "Issuer-authentication setting in the historical Visa application.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "Visa Integrated Circuit Card Specification - official Visa library",
+            "url": "https://digitalpartnerservices.visaonline.com/Document",
+            "locator": "Appendix A, Table A-4, printed pages A-63/A-64; individual definitions in Table A-1; historical VIS 1.4.0 citation. Link opens Visa's specification library; document access may require authorization."
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#9F56"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F58",
+      "name": "Lower Consecutive Offline Limit (Card Check)",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "visa-icc-1.4",
+          "label": "Visa - ICC 1.4.0 - historical (2001)",
+          "networks": [
+            "visa"
+          ],
+          "kernel": null,
+          "version": "1.4.0, Visa Public, 31 October 2001",
+          "historical": true,
+          "name": "Lower Consecutive Offline Limit (Card Check)",
+          "description": "Lower offline transaction count limit used in card-side checking.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "Visa Integrated Circuit Card Specification - official Visa library",
+            "url": "https://digitalpartnerservices.visaonline.com/Document",
+            "locator": "Appendix A, Table A-4, printed pages A-63/A-64; individual definitions in Table A-1; historical VIS 1.4.0 citation. Link opens Visa's specification library; document access may require authorization."
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#9F58"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F59",
+      "name": "Upper Consecutive Offline Limit (Card Check)",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "visa-icc-1.4",
+          "label": "Visa - ICC 1.4.0 - historical (2001)",
+          "networks": [
+            "visa"
+          ],
+          "kernel": null,
+          "version": "1.4.0, Visa Public, 31 October 2001",
+          "historical": true,
+          "name": "Upper Consecutive Offline Limit (Card Check)",
+          "description": "Upper offline transaction count limit used in card-side checking.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "Visa Integrated Circuit Card Specification - official Visa library",
+            "url": "https://digitalpartnerservices.visaonline.com/Document",
+            "locator": "Appendix A, Table A-4, printed pages A-63/A-64; individual definitions in Table A-1; historical VIS 1.4.0 citation. Link opens Visa's specification library; document access may require authorization."
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#9F59"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F5B",
+      "name": "DSDOL",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "mc-kernel2-2.6",
+          "label": "Mastercard - Kernel 2 v2.6 (2016)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": "2",
+          "version": "2.6, February 2016",
+          "historical": false,
+          "name": "DSDOL",
+          "description": "Lists the input objects used in data-storage processing.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+            "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+          }
+        },
+        {
+          "id": "visa-kernel3-2.11",
+          "label": "Visa - Kernel 3 v2.11 (2023)",
+          "networks": [
+            "visa"
+          ],
+          "kernel": "3",
+          "version": "2.11, June 2023",
+          "historical": false,
+          "name": "Issuer Script Results",
+          "description": "Results of issuer-script processing in Kernel 3.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-3, Kernel 3 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91727&type=specifications",
+            "locator": "Annex A data dictionary and tag index, printed pages 119-120"
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#9F5B"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F5C",
+      "name": "Cumulative Total Transaction Amount Upper Limit",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "visa-icc-1.4",
+          "label": "Visa - ICC 1.4.0 - historical (2001)",
+          "networks": [
+            "visa"
+          ],
+          "kernel": null,
+          "version": "1.4.0, Visa Public, 31 October 2001",
+          "historical": true,
+          "name": "Cumulative Total Transaction Amount Upper Limit",
+          "description": "Upper cumulative offline amount threshold for the historical Visa application.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "Visa Integrated Circuit Card Specification - official Visa library",
+            "url": "https://digitalpartnerservices.visaonline.com/Document",
+            "locator": "Appendix A, Table A-4, printed pages A-63/A-64; individual definitions in Table A-1; historical VIS 1.4.0 citation. Link opens Visa's specification library; document access may require authorization."
+          }
+        },
+        {
+          "id": "mc-kernel2-2.6",
+          "label": "Mastercard - Kernel 2 v2.6 (2016)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": "2",
+          "version": "2.6, February 2016",
+          "historical": false,
+          "name": "DS Requested Operator ID",
+          "description": "Operator identifier requested by the terminal for data storage.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+            "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#9F5C"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F5D",
+      "name": "Application Capabilities Information",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "mc-kernel2-2.6",
+          "label": "Mastercard - Kernel 2 v2.6 (2016)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": "2",
+          "version": "2.6, February 2016",
+          "historical": false,
+          "name": "Application Capabilities Information",
+          "description": "Card feature information beyond basic payment processing.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+            "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+          },
+          "aliases": [
+            "ACI"
+          ]
+        },
+        {
+          "id": "visa-kernel3-2.11",
+          "label": "Visa - Kernel 3 v2.11 (2023)",
+          "networks": [
+            "visa"
+          ],
+          "kernel": "3",
+          "version": "2.11, June 2023",
+          "historical": false,
+          "name": "Available Offline Spending Amount",
+          "description": "Remaining offline spending amount reported for this kernel profile.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-3, Kernel 3 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91727&type=specifications",
+            "locator": "Annex A data dictionary and tag index, printed pages 119-120"
+          },
+          "aliases": [
+            "AOSA"
+          ]
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#9F5D"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F5E",
+      "name": "DS ID",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "mc-kernel2-2.6",
+          "label": "Mastercard - Kernel 2 v2.6 (2016)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": "2",
+          "version": "2.6, February 2016",
+          "historical": false,
+          "name": "DS ID",
+          "description": "Application identifier used by data-storage processing.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+            "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#9F5E"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F60",
+      "name": "CVC3 (Track 1)",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "mc-kernel2-2.6",
+          "label": "Mastercard - Kernel 2 v2.6 (2016)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": "2",
+          "version": "2.6, February 2016",
+          "historical": false,
+          "name": "CVC3 (Track 1)",
+          "description": "Dynamic CVC3 check value associated with Track 1.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+            "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#9F60"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F61",
+      "name": "CVC3 (Track 2)",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "mc-kernel2-2.6",
+          "label": "Mastercard - Kernel 2 v2.6 (2016)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": "2",
+          "version": "2.6, February 2016",
+          "historical": false,
+          "name": "CVC3 (Track 2)",
+          "description": "Dynamic CVC3 check value associated with Track 2.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+            "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#9F61"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F62",
+      "name": "PCVC3 (Track 1)",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "mc-kernel2-2.6",
+          "label": "Mastercard - Kernel 2 v2.6 (2016)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": "2",
+          "version": "2.6, February 2016",
+          "historical": false,
+          "name": "PCVC3 (Track 1)",
+          "description": "Track 1 positions reserved for the dynamic CVC3 digits.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+            "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#9F62"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F63",
+      "name": "PUNATC (Track 1)",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "mc-kernel2-2.6",
+          "label": "Mastercard - Kernel 2 v2.6 (2016)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": "2",
+          "version": "2.6, February 2016",
+          "historical": false,
+          "name": "PUNATC (Track 1)",
+          "description": "Track 1 positions reserved for unpredictable-number and transaction-counter digits.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+            "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#9F63"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F64",
+      "name": "NATC (Track 1)",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "mc-kernel2-2.6",
+          "label": "Mastercard - Kernel 2 v2.6 (2016)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": "2",
+          "version": "2.6, February 2016",
+          "historical": false,
+          "name": "NATC (Track 1)",
+          "description": "Number of transaction-counter digits included in Track 1.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+            "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#9F64"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F65",
+      "name": "PCVC3 (Track 2)",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "mc-kernel2-2.6",
+          "label": "Mastercard - Kernel 2 v2.6 (2016)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": "2",
+          "version": "2.6, February 2016",
+          "historical": false,
+          "name": "PCVC3 (Track 2)",
+          "description": "Track 2 positions reserved for the dynamic CVC3 digits.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+            "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#9F65"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F66",
+      "name": "PUNATC (Track 2)",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "mc-kernel2-2.6",
+          "label": "Mastercard - Kernel 2 v2.6 (2016)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": "2",
+          "version": "2.6, February 2016",
+          "historical": false,
+          "name": "PUNATC (Track 2)",
+          "description": "Track 2 positions reserved for unpredictable-number and transaction-counter digits.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+            "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+          }
+        },
+        {
+          "id": "visa-kernel3-2.11",
+          "label": "Visa - Kernel 3 v2.11 (2023)",
+          "networks": [
+            "visa"
+          ],
+          "kernel": "3",
+          "version": "2.11, June 2023",
+          "historical": false,
+          "name": "Terminal Transaction Qualifiers",
+          "description": "Reader capabilities and transaction requirements sent to the card.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-3, Kernel 3 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91727&type=specifications",
+            "locator": "Annex A data dictionary and tag index, printed pages 119-120"
+          },
+          "aliases": [
+            "TTQ"
+          ]
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#9F66"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F67",
+      "name": "NATC (Track 2)",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "mc-kernel2-2.6",
+          "label": "Mastercard - Kernel 2 v2.6 (2016)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": "2",
+          "version": "2.6, February 2016",
+          "historical": false,
+          "name": "NATC (Track 2)",
+          "description": "Number of transaction-counter digits included in Track 2.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+            "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#9F67"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F69",
+      "name": "UDOL",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "mc-kernel2-2.6",
+          "label": "Mastercard - Kernel 2 v2.6 (2016)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": "2",
+          "version": "2.6, February 2016",
+          "historical": false,
+          "name": "UDOL",
+          "description": "Lists input objects for COMPUTE CRYPTOGRAPHIC CHECKSUM.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+            "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+          }
+        },
+        {
+          "id": "visa-kernel3-2.11",
+          "label": "Visa - Kernel 3 v2.11 (2023)",
+          "networks": [
+            "visa"
+          ],
+          "kernel": "3",
+          "version": "2.11, June 2023",
+          "historical": false,
+          "name": "Card Authentication Related Data",
+          "description": "Card authentication data used by Kernel 3.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-3, Kernel 3 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91727&type=specifications",
+            "locator": "Annex A data dictionary and tag index, printed pages 119-120"
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#9F69"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F6B",
+      "name": "Track 2 Data",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "mc-kernel2-2.6",
+          "label": "Mastercard - Kernel 2 v2.6 (2016)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": "2",
+          "version": "2.6, February 2016",
+          "historical": false,
+          "name": "Track 2 Data",
+          "description": "Track 2 content used by the Kernel 2 mag-stripe processing path.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+            "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#9F6B"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F72",
+      "name": "Consecutive Transaction Limit (International-Country)",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "visa-icc-1.4",
+          "label": "Visa - ICC 1.4.0 - historical (2001)",
+          "networks": [
+            "visa"
+          ],
+          "kernel": null,
+          "version": "1.4.0, Visa Public, 31 October 2001",
+          "historical": true,
+          "name": "Consecutive Transaction Limit (International-Country)",
+          "description": "Offline transaction limit for international transactions outside the issuer country.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "Visa Integrated Circuit Card Specification - official Visa library",
+            "url": "https://digitalpartnerservices.visaonline.com/Document",
+            "locator": "Appendix A, Table A-4, printed pages A-63/A-64; individual definitions in Table A-1; historical VIS 1.4.0 citation. Link opens Visa's specification library; document access may require authorization."
+          }
+        },
+        {
+          "id": "mc-kernel2-2.6",
+          "label": "Mastercard - Kernel 2 v2.6 (2016)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": "2",
+          "version": "2.6, February 2016",
+          "historical": false,
+          "name": "Protected Data Envelope 3",
+          "description": "Profile-specific container for non-payment data.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+            "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#9F72"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F73",
+      "name": "Currency Conversion Factor",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "visa-icc-1.4",
+          "label": "Visa - ICC 1.4.0 - historical (2001)",
+          "networks": [
+            "visa"
+          ],
+          "kernel": null,
+          "version": "1.4.0, Visa Public, 31 October 2001",
+          "historical": true,
+          "name": "Currency Conversion Factor",
+          "description": "Currency conversion factor used by the historical Visa application.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "Visa Integrated Circuit Card Specification - official Visa library",
+            "url": "https://digitalpartnerservices.visaonline.com/Document",
+            "locator": "Appendix A, Table A-4, printed pages A-63/A-64; individual definitions in Table A-1; historical VIS 1.4.0 citation. Link opens Visa's specification library; document access may require authorization."
+          }
+        },
+        {
+          "id": "mc-kernel2-2.6",
+          "label": "Mastercard - Kernel 2 v2.6 (2016)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": "2",
+          "version": "2.6, February 2016",
+          "historical": false,
+          "name": "Protected Data Envelope 4",
+          "description": "Profile-specific container for non-payment data.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+            "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#9F73"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F75",
+      "name": "Cumulative Total Transaction Amount Limit - Dual Currency",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "visa-icc-1.4",
+          "label": "Visa - ICC 1.4.0 - historical (2001)",
+          "networks": [
+            "visa"
+          ],
+          "kernel": null,
+          "version": "1.4.0, Visa Public, 31 October 2001",
+          "historical": true,
+          "name": "Cumulative Total Transaction Amount Limit - Dual Currency",
+          "description": "Cumulative offline amount limit for the historical dual-currency feature.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "Visa Integrated Circuit Card Specification - official Visa library",
+            "url": "https://digitalpartnerservices.visaonline.com/Document",
+            "locator": "Appendix A, Table A-4, printed pages A-63/A-64; individual definitions in Table A-1; historical VIS 1.4.0 citation. Link opens Visa's specification library; document access may require authorization."
+          }
+        },
+        {
+          "id": "mc-kernel2-2.6",
+          "label": "Mastercard - Kernel 2 v2.6 (2016)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": "2",
+          "version": "2.6, February 2016",
+          "historical": false,
+          "name": "Unprotected Data Envelope 1",
+          "description": "Profile-specific container for non-payment data.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+            "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#9F75"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F76",
+      "name": "Secondary Application Currency Code",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "visa-icc-1.4",
+          "label": "Visa - ICC 1.4.0 - historical (2001)",
+          "networks": [
+            "visa"
+          ],
+          "kernel": null,
+          "version": "1.4.0, Visa Public, 31 October 2001",
+          "historical": true,
+          "name": "Secondary Application Currency Code",
+          "description": "Secondary currency used by the historical Visa application.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "Visa Integrated Circuit Card Specification - official Visa library",
+            "url": "https://digitalpartnerservices.visaonline.com/Document",
+            "locator": "Appendix A, Table A-4, printed pages A-63/A-64; individual definitions in Table A-1; historical VIS 1.4.0 citation. Link opens Visa's specification library; document access may require authorization."
+          }
+        },
+        {
+          "id": "mc-kernel2-2.6",
+          "label": "Mastercard - Kernel 2 v2.6 (2016)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": "2",
+          "version": "2.6, February 2016",
+          "historical": false,
+          "name": "Unprotected Data Envelope 2",
+          "description": "Profile-specific container for non-payment data.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+            "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#9F76"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F7F",
+      "name": "Card Production Life Cycle data / historical CPLC label",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "visa-icc-1.4",
+          "label": "Visa - ICC 1.4.0 - historical (2001)",
+          "networks": [
+            "visa"
+          ],
+          "kernel": null,
+          "version": "1.4.0, Visa Public, 31 October 2001",
+          "historical": true,
+          "name": "Card Production Life Cycle data / historical CPLC label",
+          "description": "Manufacturing and personalization identifiers in the historical CPLC structure.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "Visa Integrated Circuit Card Specification - official Visa library",
+            "url": "https://digitalpartnerservices.visaonline.com/Document",
+            "locator": "Appendix A, Table A-4, printed pages A-63/A-64; individual definitions in Table A-1; historical VIS 1.4.0 citation. Link opens Visa's specification library; document access may require authorization."
+          }
+        },
+        {
+          "id": "mc-kernel2-2.6",
+          "label": "Mastercard - Kernel 2 v2.6 (2016)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": "2",
+          "version": "2.6, February 2016",
+          "historical": false,
+          "name": "DS Unpredictable Number",
+          "description": "Unpredictable value used by integrated data-storage processing.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+            "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+          }
+        },
+        {
+          "id": "globalplatform-cplc",
+          "label": "GlobalPlatform - card-management context",
+          "networks": [
+            "globalplatform"
+          ],
+          "kernel": null,
+          "version": "Online repository checked 2026-10-28",
+          "historical": false,
+          "name": "CPLC",
+          "description": "Card Production Life Cycle identifiers in the GlobalPlatform management context.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "GPShell command manual",
+            "url": "https://github.com/kaoh/globalplatform/blob/master/gpshell/src/gpshell.1.md",
+            "locator": "get_data identifiers and Format of CPLC data"
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#9F7F"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "C3",
+      "name": "Card issuer action code - decline",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "elitt-cb-mc-1.7",
+          "label": "CB / Mastercard - ELITT test cards v1.7 (2024)",
+          "networks": [
+            "cb",
+            "mastercard",
+            "test-card"
+          ],
+          "kernel": null,
+          "version": "1.7, 8 February 2024",
+          "historical": false,
+          "name": "Card issuer action code - decline",
+          "description": "Vendor test-card action code for decline.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "Instructions for use: CB test cards and CB development cards",
+            "url": "https://testcards.elitt.com/wp-content/uploads/2024/03/ELITT_Notice_Cartes_CB_test_developpement_v1.7_V19_20EN.pdf",
+            "locator": "PDF page 23"
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#C3"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "C4",
+      "name": "Card issuer action code - default",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "elitt-cb-mc-1.7",
+          "label": "CB / Mastercard - ELITT test cards v1.7 (2024)",
+          "networks": [
+            "cb",
+            "mastercard",
+            "test-card"
+          ],
+          "kernel": null,
+          "version": "1.7, 8 February 2024",
+          "historical": false,
+          "name": "Card issuer action code - default",
+          "description": "Vendor test-card action code for default processing.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "Instructions for use: CB test cards and CB development cards",
+            "url": "https://testcards.elitt.com/wp-content/uploads/2024/03/ELITT_Notice_Cartes_CB_test_developpement_v1.7_V19_20EN.pdf",
+            "locator": "PDF page 24"
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized publication of the 29 reviewed profile-specific tag IDs, with explicit context and references.",
+    "reference": "review/online-tag-audit.json#C4"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F55",
+      "name": "Geographic Indicator",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "visa-icc-1.4",
+          "label": "Visa - ICC 1.4.0 - historical (2001)",
+          "networks": [
+            "visa"
+          ],
+          "kernel": null,
+          "version": "1.4.0, Visa Public, 31 October 2001",
+          "historical": true,
+          "name": "Geographic Indicator",
+          "description": "Historical Visa geographic restrictions for domestic and international transactions.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "Visa Integrated Circuit Card Specification - official Visa library",
+            "url": "https://digitalpartnerservices.visaonline.com/Document",
+            "locator": "Appendix A, Table A-4, printed pages A-63/A-64; individual definitions in Table A-1; historical VIS 1.4.0 citation. Link opens Visa's specification library; document access may require authorization."
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized online and offline publication of confirmed profile meanings after follow-up source review. Unverified legacy labels excluded.",
+    "reference": "review/activation-followup-2026-10-28.json#9F55"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F6C",
+      "name": "Mag Stripe Application Version Number (Card)",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "mc-paypass-2006",
+          "label": "Mastercard - PayPass M/Chip - historical (2006)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": null,
+          "version": "Issuer Implementation Requirements, June 2006",
+          "historical": true,
+          "name": "Mag Stripe Application Version Number (Card)",
+          "description": "Version of the card's Mastercard PayPass mag-stripe application; distinct from Visa CTQ at the same tag.",
+          "format": "binary",
+          "length": "2",
+          "reference": {
+            "title": "Mastercard PayPass M/Chip Issuer Implementation Requirements (public mirror)",
+            "url": "https://cda.manymanuals.com/tvs-monitors/cvc3/user-manual-27362/38",
+            "locator": "Section 4.7, Table 17, printed page 38"
+          }
+        },
+        {
+          "id": "visa-kernel3-2.11",
+          "label": "Visa - Kernel 3 v2.11 (2023)",
+          "networks": [
+            "visa"
+          ],
+          "kernel": "3",
+          "version": "2.11, June 2023",
+          "historical": false,
+          "name": "Card Transaction Qualifiers (CTQ)",
+          "description": "Visa Kernel 3 card-provided qualifiers describing card requirements and capabilities; not the Mastercard mag-stripe version field.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-3, Kernel 3 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91727&type=specifications",
+            "locator": "Annex A data dictionary and tag index, printed pages 119-120"
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized online and offline publication of confirmed profile meanings after follow-up source review. Unverified legacy labels excluded.",
+    "reference": "review/activation-followup-2026-10-28.json#9F6C"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "9F79",
+      "name": "VLP Available Funds",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "visa-icc-1.4",
+          "label": "Visa - ICC 1.4.0 - historical (2001)",
+          "networks": [
+            "visa"
+          ],
+          "kernel": null,
+          "version": "1.4.0, Visa Public, 31 October 2001",
+          "historical": true,
+          "name": "VLP Available Funds",
+          "description": "Available balance for the historical Visa Low-Value Payment feature.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "Visa Integrated Circuit Card Specification - official Visa library",
+            "url": "https://digitalpartnerservices.visaonline.com/Document",
+            "locator": "Appendix A, Table A-4, printed pages A-63/A-64; individual definitions in Table A-1; historical VIS 1.4.0 citation. Link opens Visa's specification library; document access may require authorization."
+          }
+        },
+        {
+          "id": "mc-kernel2-2.6",
+          "label": "Mastercard - Kernel 2 v2.6 (2016)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": "2",
+          "version": "2.6, February 2016",
+          "historical": false,
+          "name": "Unprotected Data Envelope 5",
+          "description": "Fifth unprotected data envelope in the Kernel 2 data-storage profile. Its contents are application-specific; this tag does not identify a readable MDK.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+            "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized online and offline publication of confirmed profile meanings after follow-up source review. Unverified legacy labels excluded.",
+    "reference": "review/activation-followup-2026-10-28.json#9F79"
+  },
+  {
+    "action": "add",
+    "entry": {
+      "tag": "DF62",
+      "name": "Application Selection Flag (ASF)",
+      "category": "Profile-specific",
+      "format": "See profile",
+      "length": "See profile",
+      "description": "Meaning depends on the application and profile. Use the matching definition below.",
+      "profiles": [
+        {
+          "id": "canada-asf-2018",
+          "label": "Canada / Interac - application selection (2018)",
+          "networks": [
+            "interac"
+          ],
+          "kernel": null,
+          "version": "U.S. Payments Forum, Canadian Card Technical Acceptance v1.0, September 2018",
+          "historical": false,
+          "name": "Application Selection Flag (ASF)",
+          "description": "Canadian application-selection information. Byte 1 concerns ATM use; byte 2 concerns POS use. Interpret in the selected Canadian/Interac application context.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "U.S. Payments Forum - Canadian Card Technical Acceptance",
+            "url": "https://www.uspaymentsforum.org/wp-content/uploads/2019/11/Canadian-Card-Technical-Acceptance-FINAL2-Sept-2018.pdf",
+            "locator": "Printed pages 5 and 10: Application Selection Flag, tag DF62"
+          }
+        },
+        {
+          "id": "mc-kernel2-2.6",
+          "label": "Mastercard - Kernel 2 v2.6 (2016)",
+          "networks": [
+            "mastercard"
+          ],
+          "kernel": "2",
+          "version": "2.6, February 2016",
+          "historical": false,
+          "name": "DS ODS Info",
+          "description": "Kernel 2 offline data-storage information; distinct from Canadian application-selection information.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "EMV Contactless Book C-2, Kernel 2 Specification",
+            "url": "https://www.emvco.com/emvco-website-search/?post_id=91725&type=specifications",
+            "locator": "Annex A.2, printed pages 553-556; Annex A.1 for individual definitions"
+          }
+        },
+        {
+          "id": "elitt-cb-mc-1.7",
+          "label": "CB / Mastercard - ELITT test cards v1.7 (2024)",
+          "networks": [
+            "cb",
+            "mastercard",
+            "test-card"
+          ],
+          "kernel": null,
+          "version": "1.7, 8 February 2024",
+          "historical": false,
+          "name": "CBLC",
+          "description": "CBLC field in the named ELITT CB test-card profile. Do not apply this vendor test-card meaning to arbitrary DF62 values.",
+          "format": "See profile",
+          "length": "See profile",
+          "reference": {
+            "title": "Instructions for use: CB test cards and CB development cards",
+            "url": "https://testcards.elitt.com/wp-content/uploads/2024/03/ELITT_Notice_Cartes_CB_test_developpement_v1.7_V19_20EN.pdf",
+            "locator": "PDF page 23"
+          }
+        }
+      ]
+    },
+    "reason": "User-authorized online and offline publication of confirmed profile meanings after follow-up source review. Unverified legacy labels excluded.",
+    "reference": "review/activation-followup-2026-10-28.json#DF62"
+  }
+]
