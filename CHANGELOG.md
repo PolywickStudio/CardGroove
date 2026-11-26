@@ -2,6 +2,10 @@
 
 Move maintenance lib/, scripts/ and tests/ into the website repository under scripts/taglist/. Run maintenance through the website npm commands with an explicit catalog checkout. Remove the obsolete standalone CI pipeline. Keep existing licenses and bundle ATR reproduction/transformation sources in dist/atr-source/.
 
+## 0.2.5
+
+Refresh the PC/SC Tools list and selected OpenSC drivers on 2026-11-26. Add 27 unique ATR entries and update descriptions for nine existing entries. The catalog now contains 5,226 ATRs.
+
 ## 0.2.4
 
 Remove legacy TSV snapshots and their import route; exclude them from releases. Bundle notices, GPL/LGPL texts and offline ATR reproduction sources in dist. Clarify unresolved tag-text licensing and mixed-license package metadata.

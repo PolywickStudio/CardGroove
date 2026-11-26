@@ -1,8 +1,8 @@
 {
-  "retrievedAt": "2026-10-25T23:48:01.477Z",
-  "openScCommit": "ccfa7600f7c7ae249118d5f301e679e476a004a5",
+  "retrievedAt": "2026-11-26T00:09:05.962Z",
+  "openScCommit": "1660a630171c1816def1fe338f592c2212e46444",
   "sourceCount": 2,
-  "recordCount": 5199,
+  "recordCount": 5226,
   "inputs": [
     {
       "id": "pcsc",
@@ -10,14 +10,14 @@
       "label": "PC/SC Tools community list",
       "url": "https://pcsc-tools.apdu.fr/smartcard_list.txt",
       "license": "GPL-2.0-or-later",
-      "records": 5184,
-      "sha256": "33aff5367ec8bce38682b147e3487a5dd9611b8a484cb54c278f961330e7a682"
+      "records": 5211,
+      "sha256": "afdb20b9324c9849f700b1a50a125e48a8566043eb72c37167f85a4f0972ee1d"
     },
     {
       "id": "opensc",
       "file": "card-cardos.c",
       "label": "CardOS",
-      "url": "https://raw.githubusercontent.com/OpenSC/OpenSC/ccfa7600f7c7ae249118d5f301e679e476a004a5/src/libopensc/card-cardos.c",
+      "url": "https://raw.githubusercontent.com/OpenSC/OpenSC/1660a630171c1816def1fe338f592c2212e46444/src/libopensc/card-cardos.c",
       "license": "LGPL-2.1-or-later",
       "records": 7,
       "sha256": "23ee12f3f86959f2d1690be33f69da13ab8d57a0295225cb024ecaace756baf0"
@@ -26,28 +26,28 @@
       "id": "opensc",
       "file": "card-openpgp.c",
       "label": "OpenPGP",
-      "url": "https://raw.githubusercontent.com/OpenSC/OpenSC/ccfa7600f7c7ae249118d5f301e679e476a004a5/src/libopensc/card-openpgp.c",
+      "url": "https://raw.githubusercontent.com/OpenSC/OpenSC/1660a630171c1816def1fe338f592c2212e46444/src/libopensc/card-openpgp.c",
       "license": "LGPL-2.1-or-later",
       "records": 7,
-      "sha256": "cabd634965fdc9dd94a75af2ffc3ab1d6fb3c51a7e2d5c7fd6eb021d0d0daad2"
+      "sha256": "4eaf98b1853dc249d9bb766751447c8ee6acf1809f9560f20129622408e6a61e"
     },
     {
       "id": "opensc",
       "file": "card-sc-hsm.c",
       "label": "SmartCard-HSM",
-      "url": "https://raw.githubusercontent.com/OpenSC/OpenSC/ccfa7600f7c7ae249118d5f301e679e476a004a5/src/libopensc/card-sc-hsm.c",
+      "url": "https://raw.githubusercontent.com/OpenSC/OpenSC/1660a630171c1816def1fe338f592c2212e46444/src/libopensc/card-sc-hsm.c",
       "license": "LGPL-2.1-or-later",
       "records": 17,
-      "sha256": "3b369801fa2f0a64f9eedc495b90c98128ebd0c4a868d7c8fd81150df81d3ef5"
+      "sha256": "e8919622b810a38e9d8070b5c391a202cec31767253bbe0522c58a7c2be7a6b1"
     },
     {
       "id": "opensc",
       "file": "card-epass2003.c",
       "label": "ePass2003",
-      "url": "https://raw.githubusercontent.com/OpenSC/OpenSC/ccfa7600f7c7ae249118d5f301e679e476a004a5/src/libopensc/card-epass2003.c",
+      "url": "https://raw.githubusercontent.com/OpenSC/OpenSC/1660a630171c1816def1fe338f592c2212e46444/src/libopensc/card-epass2003.c",
       "license": "LGPL-2.1-or-later",
       "records": 1,
-      "sha256": "12bf67cce615bd38bbd19e6c323a764d825e0f0dae9bf1524ea1d6a4e2dc9e2d"
+      "sha256": "5c37fba2ace4bbeb85b3b15f91367c2860134feca6b9aecae93e8be0e1541fef"
     }
   ]
 }

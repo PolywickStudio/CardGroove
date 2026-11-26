@@ -1,8 +1,8 @@
 # CardGroove Taglist
 
 Shared, versioned EMV tag and smart-card ATR reference data for the CardGroove
-website and Windows viewer. Current release: **0.2.4**, with **113 tags**
-and **5,199 ATR entries**. The initial snapshot matches the local CardGroove
+website and Windows viewer. Current release: **0.2.5**, with **113 tags**
+and **5,226 ATR entries**. The initial snapshot matches the local CardGroove
 website project. The website uses the generated tag module, including 33 profile-specific tag IDs
 with 51 scoped meanings. The desktop integration can consume the XML export.
 
